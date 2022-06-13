@@ -1,11 +1,40 @@
 /* Botões de cor única
 --------------------------------------------------------------------------------------------------------------- */
-.btn-orange, .btn-orange:visited, .btn-orange:hover {color:#FFFFFF; background-color:#E43F21; border-color:#E43F21;}
+.btn-orange {display:inline-block; padding:8px 18px 10px; text-transform: uppercase; border:1px solid #E43F21; color:#FFFFFF; background-color:#E43F21;}
 .btn-big {font-size: 1.2rem; padding: 16px 20px;}
 
 .nav-emphasys, .nav-emphasys:hover {color: #FFFFFF !important; background-color: #E43F21 !important; padding: 8px !important; border-radius: 5px;}
 
 .hover-zoom:hover {transform: scale(1.1);}
+
+#breadcrumb {padding-top: 30px; color: #FFFFFF;}
+
+.red-gradient {background: linear-gradient(180deg, #9D2E19, #C6422B);}
+.green-gradient {background: linear-gradient(180deg, #3E8C3C, #1f9454);}
+.blue-gradient {background: linear-gradient(180deg, #294A97, #20629B);}
+.purple-gradient {background: linear-gradient(180deg, #640C3F, #8E146E);}
+.orange-gradient {background: linear-gradient(180deg, #B9470F, #C66F22);}
+
+
+h1 {font-size: 6rem;}
+h2 {font-size: 3.75rem;}
+h3 {font-size: 2.5rem;}
+h4 {font-size: 2rem;}
+h5 {font-size: 1.5rem;}
+h6 {font-size: 1 rem;}
+
+@media screen and (max-width:900px){
+	h1 {font-size: 4.5rem;}
+	h2 {font-size: 3.5rem;}
+}
+
+@media screen and (max-width:650px){
+	h1 {font-size: 3rem;}
+	h2 {font-size: 2rem;}
+	h3 {font-size: 1.7rem;}
+	h4 {font-size: 1.4rem;}
+	h5 {font-size: 1.2rem;}
+}
 
 @keyframes showSlide {
     from {opacity: 0;}

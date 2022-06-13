@@ -17,7 +17,7 @@ function slideshow(targetId) {
 
             nextImg.classList.add("top-layer");           
             nextImg.style.zIndex = 4;
-        }, 5000);
+        }, 7000);
     }
 }
 

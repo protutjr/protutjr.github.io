@@ -25,7 +25,7 @@ File: Layout CSS
 #pageintro{padding:150px 0; color: #FFFFFF;}
 
 #pageintro *{word-wrap:break-word;}
-#pageintro .page-heading{margin-bottom:20px; font-size:6rem;}
+#pageintro .page-heading{margin-bottom:20px;}
 #pageintro p{margin:0; text-transform:uppercase; font-weight:700; font-size:1.4rem;}
 #pageintro .btn-contact{margin-top:40px;}
 

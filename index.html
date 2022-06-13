@@ -17,8 +17,8 @@ Licence URI: https://www.os-templates.com/template-terms
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
     <!-- CSS -->
-    <link href="./layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
-    <link href="./layout/styles/protut.css" rel="stylesheet">
+    <link href="./css/layout.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./css/protut.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     
     <!-- FONTES -->
@@ -26,9 +26,9 @@ Licence URI: https://www.os-templates.com/template-terms
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Overpass:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
 
     <!-- JAVASCRIPT -->
-    <script src="./layout/scripts/jquery.min.js"></script>
-    <script src="./layout/scripts/jquery.backtotop.js" defer></script>
-    <script src="./layout/scripts/protut.js" defer></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.backtotop.js" defer></script>
+    <script src="./js/slideshow.js" defer></script>
     <script>
 		/* Carrega o cabeçalho e rodapé da página */
         function showSite() {
@@ -40,8 +40,8 @@ Licence URI: https://www.os-templates.com/template-terms
 			}
 		}        
         $(document).ready(function() {
-            $("#header-content").load("./header.html", showSite);
-            $("#footer-content").load("./footer.html", showSite);
+            $("#header-content").load("./_includes/header.html", showSite);
+            $("#footer-content").load("./_includes/footer.html", showSite);
         });
     </script>    
 </head>
@@ -50,7 +50,7 @@ Licence URI: https://www.os-templates.com/template-terms
 
 <div id="loading-screen">
 	<span>
-		<img src="./images/demo/protut.png">
+		<img src="./images/protut.png">
 		<i class="fa fa-circle-o-notch fa-spin fa-3x"></i>
 	</span>
 </div>
@@ -60,36 +60,36 @@ Licence URI: https://www.os-templates.com/template-terms
 
 <!-- Seção de apresentação -->
 <div class="wrapper bgded">
-  <div class="bg-img bg-fallback" style="background-image: url('./images/demo/backgrounds/eolico.jpg');"></div>
+  <div class="bg-img bg-fallback" style="background-image: url('./images/backgrounds/painel_solar.jpg');"></div>
   <div id="main-slideshow" class="slideshow">
-    <div class="bg-img" onerror="this.remove();" style="background-image: url('./images/demo/backgrounds/braco_robo.webp');"></div>
-    <div class="bg-img" onerror="this.remove();" style="background-image: url('./images/demo/backgrounds/pcb.webp');"></div>
-    <div class="bg-img" onerror="this.remove();" style="background-image: url('./images/demo/backgrounds/painel_clp.webp');"></div>
-    <div class="bg-img" onerror="this.remove();" style="background-image: url('./images/demo/backgrounds/painel_solar.webp');"></div>
+    <div class="bg-img" onerror="this.remove();" style="background-image: url('./images/backgrounds/braco_robo.webp');"></div>
+    <div class="bg-img" onerror="this.remove();" style="background-image: url('./images/backgrounds/pcb.webp');"></div>
+    <div class="bg-img" onerror="this.remove();" style="background-image: url('./images/backgrounds/painel_clp.webp');"></div>
+    <div class="bg-img" onerror="this.remove();" style="background-image: url('./images/backgrounds/painel_solar.webp');"></div>
   </div>
   
   <div id="pageintro" class="center bg-text bg-gradient"> 
     <div class="hoc">
       <h1 class="page-heading shadow-text">Soluções em energia</h1>
       <p class="shadow-text">Para sua casa ou empresa, nós temos a solução ideal para suas demandas em eletricidade e automação</p>
-      <a class="btn btn-contact btn-big btn-orange  hover-zoom" href="./contato.html">Fale conosco</a></li>
+      <a class="btn-contact btn-big btn-orange hover-zoom" href="./contato.html">Fale conosco</a></li>
     </div>
   </div>
 </div>
 
 <!-- Seção de serviços -->
-<div class="wrapper row3">
+<div class="wrapper row-white">
   <main class="hoc container clear">   
     
     <div class="sectiontitle">
-      <h3 class="heading font-x3">Conheça nossos serviços</h3>
+      <h2>Conheça nossos serviços</h2>
       <p>Temos um portfólio completo para atender às suas necessidades</p>
     </div>
 
     <ul class="nospace group services btmspace-50">
       <li class="one_third first hover-zoom">
         <article><i class="fa fa-usd"></i>
-          <h6 class="heading">Eficiência energética</h6>
+          <h5>Eficiência energética</h5>
           <p>Obtenha uma análise da eficiência energética do seu processo, melhore a sustentabilidade de seu negócio e economize dinheiro.</p>
           <footer>
             <a href="#">Saiba mais &raquo;</a>
@@ -98,7 +98,7 @@ Licence URI: https://www.os-templates.com/template-terms
       </li>          
       <li class="one_third hover-zoom">
         <article><i class="fa fa-gears"></i>
-          <h6 class="heading">Automação Industrial &amp; Residencial</h6>
+          <h5>Automação Industrial &amp; Residencial</h5>
           <p>Projetamos e implementamos sistemas de automação para sua empresa ou residência.</p>          
           <footer>
             <a href="#">Saiba mais &raquo;</a>
@@ -107,7 +107,7 @@ Licence URI: https://www.os-templates.com/template-terms
       </li>
       <li class="one_third hover-zoom">
         <article><i class="fa fa-bolt"></i>
-          <h6 class="heading">SPDA</h6>
+          <h5>SPDA</h5>
           <p>Elaboramos o projeto de Sistema de Proteção contra Descargas Atmosféricas (SPDA) para a sua instalação elétrica.</p>
           <footer>
             <a href="#">Saiba mais &raquo;</a>
@@ -117,7 +117,7 @@ Licence URI: https://www.os-templates.com/template-terms
     </ul>
     
     <div class="hoc center">
-      <a class="btn btn-orange hover-zoom" href="servicos.html">Todos os serviços &raquo;</a>
+      <a class="btn-orange hover-zoom" href="servicos.html">Todos os serviços &raquo;</a>
     </div>
      
     <div class="clear"></div>
@@ -130,14 +130,14 @@ Licence URI: https://www.os-templates.com/template-terms
     <div class="group">
       
       <div class="one_half first">
-        <h6 class="heading center font-x3">Nossa história</h6>
+        <h2 class="center">Nossa história</h2>
         <p class="justify">Fundada em 2013 por alunos da UTFPR de Ponta Grossa, a missão da Protut é desenvolver, capacitar, produzir e comercializar serviços, tecnologias e produtos diferenciados de alta qualidade, fazendo parcerias de confiança e respeito mútuo nas áreas acadêmicas e profissionais.</p>
         <p class="justify">A partir de 201?, com o curso de Engenharia Eletrônica sendo transformado em Engenharia Elétrica, e com a abertura da nossa empresa também aos alunos do curso de Tecnologia em Automação Industrial, mudamos nosso nome de Protut Eletrônica para <b>Protut Soluções em Energia</b>. Uma nova identidade, mas o mesmo compromisso e dedicação aos nossos clientes.</p>
         <footer class="center"><a href="#">Saiba mais &raquo;</a></footer>
       </div>
       
       <div class="one_half">
-        <h6 class="heading center font-x3">O MEJ</h6>
+        <h2 class="center">O MEJ</h2>
         <p class="justify">O Movimento Empresa Júnior (MEJ) surgiu na França em 1967. A principal missão das empresas juniores (EJs) é aproximar os estudantes de cursos superiores da vivência prática da sua profissão, desenvolvendo o empreendedorismo e preparando para os futuros desafios do mercado de trabalho.</p>
         <p class="justify">A Protut está associada à Confederação Brasileira de Empresas Juniores - a Brasil Júnior. Também pertencemos, a nível estadual, à Federação Paranaense de Empresas Juniores (FEJEPAR), e, a nível regional, ao Núcleo Ponta Grossa de Empresas Juniores (NucPG).</p>
         <footer class="center"><a href="#">Saiba mais &raquo;</a></footer>
@@ -149,11 +149,11 @@ Licence URI: https://www.os-templates.com/template-terms
 
 <!-- Seção de recrutamento -->
 <div class="wrapper bgded">
-  <div class="bg-img" style="background-image: url('./images/demo/backgrounds/timeprotut.jpg');"></div>
+  <div class="bg-img" style="background-image: url('./images/backgrounds/timeprotut.jpg');"></div>
   <div class="bg-gradient">
     <div class="hoc split clear">
       <section> 
-        <h2 class="heading">Entre para o nosso time</h2>
+        <h3>Entre para o nosso time</h3>
         <p>Faça parte da equipe Protut e desfrute da experiência única de pertencer a uma empresa júnior.</p>
         <ul class="fa-ul">
           <li><i class="fa-li fa fa-check-circle"></i> Ganhe experiência na sua área</li>
@@ -173,12 +173,12 @@ Licence URI: https://www.os-templates.com/template-terms
   <section class="hoc container clear"> 
     <div class="group">
       <div class="one_half first">
-        <h6 class="heading font-x3">Fique por dentro das novidades</h6>
+        <h3>Fique por dentro das novidades</h3>
         <p>Quer saber mais sobre as últimas notícias e tudo o que está acontecendo na Protut? Acesse já o nosso blog. Lá, você fica sabendo de tudo que acontece na Protut: Processos seletivos, cases de sucesso, dicas e muito mais.</p>
         <footer><a href="#">Acessar blog &raquo;</a></footer>
       </div>
       <div class="one_half">
-        <a href="#"><img src="./images/demo/backgrounds/blogman.jpg"></a>
+        <img src="./images/blogman.jpg">
       </div>
     </div>
   </section>
