@@ -29,7 +29,6 @@ document.querySelectorAll("#mainav > ul > li").forEach((elm) => {
     } else {
         let optgroup = createOptgroup(foo.innerText);
         elm.querySelectorAll("a:not(.drop)").forEach((elm2) => {
-			console.log(elm2);
             let option = createOption(elm2.innerHTML || elm2.textContent, elm2.href);
             optgroup.appendChild(option);
         });

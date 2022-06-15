@@ -1,3 +1,7 @@
+/* Simple image slideshow engine
+ * Author: Celso Ubaldo
+ */
+ 
 function slideshow(targetId) {
     let target = document.getElementById(targetId);
     if (target.childElementCount > 2) {

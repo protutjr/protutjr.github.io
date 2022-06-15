@@ -10,8 +10,8 @@
 #breadcrumb {padding-top: 30px; color: #FFFFFF;}
 
 .red-gradient {background: linear-gradient(180deg, #9D2E19, #C6422B);}
-.green-gradient {background: linear-gradient(180deg, #3E8C3C, #1f9454);}
-.blue-gradient {background: linear-gradient(180deg, #294A97, #20629B);}
+.green-gradient {background: linear-gradient(180deg, #1C8048, #1F9454);}
+.blue-gradient {background: linear-gradient(180deg, #184B78, #20629B);}
 .purple-gradient {background: linear-gradient(180deg, #640C3F, #8E146E);}
 .orange-gradient {background: linear-gradient(180deg, #B9470F, #C66F22);}
 
@@ -21,7 +21,7 @@ h2 {font-size: 3.75rem;}
 h3 {font-size: 2.5rem;}
 h4 {font-size: 2rem;}
 h5 {font-size: 1.5rem;}
-h6 {font-size: 1 rem;}
+h6 {font-size: 1rem;}
 
 @media screen and (max-width:900px){
 	h1 {font-size: 4.5rem;}
