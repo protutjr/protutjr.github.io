@@ -15,11 +15,14 @@
 .purple-gradient {background: linear-gradient(180deg, #640C3F, #8E146E);}
 .orange-gradient {background: linear-gradient(180deg, #B9470F, #C66F22);}
 
-.dropdown {background-color: #EAEAEA; margin: 10px 0;}
+.dropdown {background-color: #FF4625; margin: 10px 0; position: relative;}
 .dropdown:not(.dropdown-visible) div {display: none;}
-.dropdown header {color: white; padding: 8px 12px; font-weight: 600; background-color: #FF4625; cursor: pointer; width: 100%;}
-.dropdown header:hover {background-color: #DE3D20;}
-.dropdown div {padding: 6px 12px;}
+.dropdown:hover {background-color: #DE3D20;}
+
+.dropdown header {color: white; padding: 8px 12px; font-weight: 600; text-align:justify; cursor: pointer; width: 98%; width: calc(100% - 15px);}
+.dropdown header::after {content: '\f0d7'; font-family: "FontAwesome"; padding: 8px 12px; position: absolute; right: 0px; top: 0px;}
+.dropdown.dropdown-visible header::after {content: '\f0d8';}
+.dropdown div {padding: 6px 12px; background-color: #F1F1F1;}
 
 h1 {font-size: 6rem;}
 h2 {font-size: 3.75rem;}
@@ -52,6 +55,7 @@ h6 {font-size: 1rem;}
 
 .content {margin-bottom: 4rem;}
 .content a {display: block;}
+.content img {max-width: 100%;}
 
 .justify {text-align: justify;}
 .jusp p {text-align: justify;}
