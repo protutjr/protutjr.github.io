@@ -15,9 +15,10 @@
 .purple-gradient {background: linear-gradient(180deg, #640C3F, #8E146E);}
 .orange-gradient {background: linear-gradient(180deg, #B9470F, #C66F22);}
 
-.dropdown {background-color: #EAEAEA;}
+.dropdown {background-color: #EAEAEA; margin: 10px 0;}
 .dropdown:not(.dropdown-visible) div {display: none;}
 .dropdown header {color: white; padding: 8px 12px; font-weight: 600; background-color: #FF4625; cursor: pointer; width: 100%;}
+.dropdown header:hover {background-color: #DE3D20;}
 .dropdown div {padding: 6px 12px;}
 
 h1 {font-size: 6rem;}
