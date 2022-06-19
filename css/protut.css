@@ -9,6 +9,8 @@
 
 #breadcrumb {padding-top: 30px; color: #FFFFFF;}
 
+.b24-form input[type='checkbox'] {display: inline;}
+
 .red-gradient {background: linear-gradient(180deg, #9D2E19, #C6422B);}
 .green-gradient {background: linear-gradient(180deg, #197341, #1F9454);}
 .blue-gradient {background: linear-gradient(180deg, #184B78, #20629B);}
@@ -77,10 +79,9 @@ h6 {font-size: 1rem;}
 
 /* Tela de carregamento
 --------------------------------------------------------------------------------------------------------------- */
-#loading-screen {width: 100vw; height: 100vh; position: sticky; top: 0; left: 0; z-index: 300; background: #E1E1DF;}
-#loading-screen span {color: #606060; position: absolute; text-align: center; top: 50%; left: 50%; transform: translate(-50%, -50%);}
-#loading-screen img {max-width: 70vw; display: block; margin: 30px;}
-#loading-screen i {margin-right: auto;}
+#contact-form-loading {width: 100%; padding: 8px 12px; text-align: center; background: #F0F0F0; color: #606060; font-size: 1.2rem;}
+#contact-form-loading {display: none;}
+#contact-form > div:only-of-type {display: block !important;}
 
 /* Botões redes sociais (dependem do Font Awesome)
 --------------------------------------------------------------------------------------------------------------- */

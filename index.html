@@ -31,24 +31,7 @@ Licence URI: https://www.os-templates.com/template-terms
 
     <!-- JAVASCRIPT -->
     <script src="./js/jquery.min.js"></script>
-    <script src="./js/jquery.backtotop.js" defer></script>
-
-    <script>
-		/* Carrega o cabeçalho e rodapé da página */
-        function showSite() {
-			if (!document.getElementById("loading-screen")) return;
-			
-			if (document.querySelector("#header-content *") && document.querySelector("#footer-content *")) {		
-				document.getElementById("loading-screen").remove();
-				//window.scroll(0,0);
-			}
-		}        
-        $(document).ready(function() {
-            $("#header-content").load("./_includes/header.html", showSite);
-            $("#footer-content").load("./_includes/footer.html", showSite);
-        });
-    </script>
-    
+    <script src="./js/jquery.backtotop.js" defer></script>    
 </head>
 
 <body id="top">
