@@ -1,31 +1,55 @@
-/* Botões de cor única
+/* Animações
+--------------------------------------------------------------------------------------------------------------- */
+@keyframes showSlide {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.hover-zoom:hover {transform: scale(1.1);}
+.top-layer { animation-name: showSlide; animation-timing-function: ease-in-out; animation-duration: 2s;}
+
+/* Botões
 --------------------------------------------------------------------------------------------------------------- */
 .btn-orange {display:inline-block; padding:8px 18px 10px; text-transform: uppercase; border:1px solid #E43F21; color:#FFFFFF; background-color:#E43F21;}
 .btn-big {font-size: 1.2rem; padding: 16px 20px;}
+.btn-rounded, .nav-emphasys, .nav-emphasys:hover {color: #FFFFFF !important; background-color: #E43F21 !important; padding: 8px !important; border-radius: 5px;}
+#contact-btn-container {display: flex;}
+#contact-btn-container a {display: block; margin: auto;}
 
-.nav-emphasys, .nav-emphasys:hover {color: #FFFFFF !important; background-color: #E43F21 !important; padding: 8px !important; border-radius: 5px;}
+/* Botões redes sociais (dependem do Font Awesome)
+--------------------------------------------------------------------------------------------------------------- */
+.btn-social {display:block; height: 40px; width:100%; margin: 10px 4px; line-height:40px; font-size:20px; text-align:center;}
+.btn-social {color:#FFFFFF; background-color: #888888; font-family: "Open Sans", Roboto, Arial, Verdana, sans-serif;}
+.btn-social:hover {filter: brightness(120%);}
+.btn-facebook {background-color:#3B5998}
+.btn-blog {background-color:#DB4A39;}
+.btn-linkedin {background-color:#0E76A8;}
+.btn-instagram {background-color: #C13584;}
+.btn-github {background-color: #171515;}
 
-.hover-zoom:hover {transform: scale(1.1);}
-
+/* Layout geral
+--------------------------------------------------------------------------------------------------------------- */
 #breadcrumb {padding-top: 30px; color: #FFFFFF;}
-
-.b24-form input[type='checkbox'] {display: inline;}
-
+.content {margin-bottom: 4rem;}
+.content a {display: block;}
+.content img {max-width: 100%;}
 .red-gradient {background: linear-gradient(180deg, #9D2E19, #C6422B);}
 .green-gradient {background: linear-gradient(180deg, #197341, #1F9454);}
 .blue-gradient {background: linear-gradient(180deg, #184B78, #20629B);}
 .purple-gradient {background: linear-gradient(180deg, #640C3F, #8E146E);}
 .orange-gradient {background: linear-gradient(180deg, #B9470F, #C66F22);}
 
+/* Dropdowns
+--------------------------------------------------------------------------------------------------------------- */
 .dropdown {background-color: #FF4625; margin: 10px 0; position: relative;}
 .dropdown:not(.dropdown-visible) div {display: none;}
 .dropdown:hover {background-color: #DE3D20;}
-
-.dropdown header {color: white; padding: 8px 12px; font-weight: 600; text-align:justify; cursor: pointer; width: 98%; width: calc(100% - 15px);}
+.dropdown header {color: white; padding: 8px 12px; font-weight: 600; text-align:justify; cursor: pointer; width: 98%; width: calc(100% - 15px); margin-right: 15px;}
 .dropdown header::after {content: '\f0d7'; font-family: "FontAwesome"; padding: 8px 12px; position: absolute; right: 0px; top: 0px;}
 .dropdown.dropdown-visible header::after {content: '\f0d8';}
 .dropdown div {padding: 6px 12px; background-color: #F1F1F1;}
 
+/* Formatação e efeitos de texto
+--------------------------------------------------------------------------------------------------------------- */
 h1 {font-size: 6rem;}
 h2 {font-size: 3.75rem;}
 h3 {font-size: 2.5rem;}
@@ -33,32 +57,8 @@ h4 {font-size: 2rem;}
 h5 {font-size: 1.5rem;}
 h6 {font-size: 1rem;}
 
-@media screen and (max-width:900px){
-	h1 {font-size: 4.5rem;}
-	h2 {font-size: 3.5rem;}
-}
-
-@media screen and (max-width:650px){
-	h1 {font-size: 3rem;}
-	h2 {font-size: 2rem;}
-	h3 {font-size: 1.7rem;}
-	h4 {font-size: 1.4rem;}
-	h5 {font-size: 1.2rem;}
-}
-
-@keyframes showSlide {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-.top-layer { animation-name: showSlide; animation-timing-function: ease-in-out; animation-duration: 2s;}
-
 .shadow {box-shadow: #171515;}
 .shadow-text {text-shadow: 1px 1px 10px #313131;}
-
-.content {margin-bottom: 4rem;}
-.content a {display: block;}
-.content img {max-width: 100%;}
-
 .justify {text-align: justify;}
 .jusp p {text-align: justify;}
 
@@ -76,22 +76,25 @@ h6 {font-size: 1rem;}
 .row-light-gray {color:#555555; background-color:#E8E8E8;}
 .row-dark-gray {color:#CBCBCB; background-color:#32353C;}
 .row-orange {color: #FFFFFF; background-color: #E43F21;}
+.row-footer, .row-footer a{color:#CBCBCB; background-color:#4A4E57;}
 
-/* Tela de carregamento
+/* Formulários da página de Contato
 --------------------------------------------------------------------------------------------------------------- */
+.b24-form input[type='checkbox'] {display: inline;}
 #contact-form-loading {width: 100%; padding: 8px 12px; text-align: center; background: #F0F0F0; color: #606060; font-size: 1.2rem;}
 #contact-form-loading {display: none;}
-#contact-form > div:only-of-type {display: block !important;}
+#contact-form div:only-of-type {display: block !important;}
 
-/* Botões redes sociais (dependem do Font Awesome)
+/* Responsividade
 --------------------------------------------------------------------------------------------------------------- */
-.btn-social {display:block; height: 40px; width:100%; margin: 10px 4px; line-height:40px; font-size:20px; text-align:center;}
-.btn-social {color:#32353C; background-color:#F7F7F7; font-family: Roboto, Helvetica, Arial, Verdana, sans-serif;}
-.btn-social:hover {filter: brightness(120%);}
-
-/* O uso de !important é desaconselhado, mas neste caso não houve alternativa... */
-.btn-facebook {color:#FFFFFF; background-color:#3B5998 !important;}
-.btn-blog {color:#FFFFFF; background-color:#DB4A39 !important;}
-.btn-linkedin {color:#FFFFFF; background-color:#0E76A8 !important;}
-.btn-instagram {color:#FFFFFF; background-color: #C13584 !important;}
-.btn-github {color:#FFFFFF; background-color: #171515 !important;}
+@media screen and (max-width:900px){
+	h1 {font-size: 4.5rem;}
+	h2 {font-size: 3.5rem;}
+}
+@media screen and (max-width:650px){
+	h1 {font-size: 3rem;}
+	h2 {font-size: 2rem;}
+	h3 {font-size: 1.7rem;}
+	h4 {font-size: 1.4rem;}
+	h5 {font-size: 1.2rem;}
+}

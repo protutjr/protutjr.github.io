@@ -10,7 +10,11 @@ function goToPage(href) {
 function createOption(label, href) {
     let option = document.createElement("option");
     option.innerText = label;
-    option.value = href;    
+    option.value = href;
+    
+    let searchStr = href.replace(/(\/index)?.html/, "");
+    if (window.location.toString().indexOf(searchStr) != -1)
+		option.selected = "selected";
     return option;
 }
 
