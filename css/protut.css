@@ -88,7 +88,7 @@ h6 {font-size: 1rem;}
 #contact-info {padding: 12px; background: #F6F6F6; border: 1px solid #CBCBCB; margin-top: 20px;}
 #contact-info h5 {text-align: center;}
 #contact-info h6 {margin: 15px 0px 0px;}
-#contact-info a, address, p {font-size: 14px; text-align: justify; display: block;}
+#contact-info a, #contact-info address, #contact-info p {font-size: 14px; text-align: justify; display: block;}
 #contact-info p {margin: 4px 0px; font-weight: 600;}
 
 /* Responsividade
