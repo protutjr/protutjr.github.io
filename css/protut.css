@@ -43,7 +43,7 @@
 .dropdown {background-color: #FF4625; margin: 10px 0; position: relative;}
 .dropdown:not(.dropdown-visible) div {display: none;}
 .dropdown:hover {background-color: #DE3D20;}
-.dropdown header {color: white; padding: 8px 12px; font-weight: 600; text-align:justify; cursor: pointer; width: 98%; width: calc(100% - 15px); margin-right: 15px;}
+.dropdown header {color: white; padding: 8px 27px 8px 12px; font-weight: 600; text-align:justify; cursor: pointer; width: 100%;}
 .dropdown header::after {content: '\f0d7'; font-family: "FontAwesome"; padding: 8px 12px; position: absolute; right: 0px; top: 0px;}
 .dropdown.dropdown-visible header::after {content: '\f0d8';}
 .dropdown div {padding: 6px 12px; background-color: #F1F1F1;}
@@ -81,9 +81,15 @@ h6 {font-size: 1rem;}
 /* Formulários da página de Contato
 --------------------------------------------------------------------------------------------------------------- */
 .b24-form input[type='checkbox'] {display: inline;}
+.b24-form-dropdown-title {font-size: 4vw !important; white-space: normal !important;}
 #contact-form-loading {width: 100%; padding: 8px 12px; text-align: center; background: #F0F0F0; color: #606060; font-size: 1.2rem;}
 #contact-form-loading {display: none;}
-#contact-form div:only-of-type {display: block !important;}
+#contact-form > div:only-of-type {display: block !important;}
+#contact-info {padding: 12px; background: #F6F6F6; border: 1px solid #CBCBCB; margin-top: 20px;}
+#contact-info h5 {text-align: center;}
+#contact-info h6 {margin: 15px 0px 0px;}
+#contact-info a, address, p {font-size: 14px; text-align: justify; display: block;}
+#contact-info p {margin: 4px 0px; font-weight: 600;}
 
 /* Responsividade
 --------------------------------------------------------------------------------------------------------------- */
@@ -96,5 +102,5 @@ h6 {font-size: 1rem;}
 	h2 {font-size: 2rem;}
 	h3 {font-size: 1.7rem;}
 	h4 {font-size: 1.4rem;}
-	h5 {font-size: 1.2rem;}
+	h5 {font-size: 1.2rem;}	
 }
