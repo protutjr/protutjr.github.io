@@ -12,8 +12,10 @@ function createOption(label, href) {
     option.innerText = label;
     option.value = href;
     
+    let is404Page = document.getElementById("error404");
     let searchStr = href.replace(/(\/index)?.html/, "");
-    if (window.location.toString().indexOf(searchStr) != -1)
+    let currentLocation = window.location.toString();
+    if (!is404Page && currentLocation.indexOf(searchStr) != -1)
 		option.selected = "selected";
     return option;
 }
