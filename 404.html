@@ -15,6 +15,8 @@ Licence URI: https://www.os-templates.com/template-terms
 <head>
     <!-- Título desta página -->
     <title>Página não encontrada - Protut Soluções em Energia</title>
+    <link rel="icon" href="./favicon.png" type="image/png">
+	<link rel="icon" href="./favicon.svg" type="image/svg+xml">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -31,6 +33,11 @@ Licence URI: https://www.os-templates.com/template-terms
     <!-- JAVASCRIPT -->
     <script src="./js/jquery.min.js"></script>
     <script src="./js/jquery.backtotop.js" defer></script>
+    
+    <!-- ERROR 404 FILES -->
+    <link href="./css/e404.css" rel="stylesheet">
+    <script src="./js/e404.js"></script>
+    
 </head>
 
 <body id="top">
@@ -39,12 +46,22 @@ Licence URI: https://www.os-templates.com/template-terms
 {% include header.html %}
 
 <div class="wrapper row-light-gray">
-  <main class="hoc container">     
-    <div id="error404" class="center"> 
-      <h3 style="margin: 0px;">Ops! A página não foi encontrada.</h3>
-      <p style="margin: 0px;">Erro 404</p>
-      <img src="./images/corujut.svg" style="width: 300px; padding: 40px;">
+  <main class="hoc container center">     
+    
+    <div id="error404" class=""> 
+      <h3>Ops! A página não foi encontrada.</h3>
+      <p>Erro 404</p>
+      <img src="./images/corujut.svg" onclick="showEasterEgg();">
+      <p class="small-txt">Não clique na Corujut</p>
     </div>
+    
+    <div id="easter-egg" style="display: none;">	  
+      <div id="quotes">
+		<h6 id="title"></h6>
+		<p id="text"></p>
+      </div>
+    </div>
+    
   </main>
 </div>
 

@@ -2,6 +2,8 @@
  * Author: Celso Ubaldo
  */
 
+let is404Page = !!document.getElementById("error404");
+
 function goToPage(href) {
     if (href != "#")
         window.location = href;
@@ -11,8 +13,7 @@ function createOption(label, href) {
     let option = document.createElement("option");
     option.innerText = label;
     option.value = href;
-    
-    let is404Page = document.getElementById("error404");
+        
     let searchStr = href.replace(/(\/index)?.html/, "");
     let currentLocation = window.location.toString();
     if (!is404Page && currentLocation.indexOf(searchStr) != -1)
@@ -41,3 +42,5 @@ document.querySelectorAll("#mainav > ul > li").forEach((elm) => {
         menu.appendChild(optgroup);
     }
 });
+
+document.getElementById("mobilemenu")[0].selected = is404Page;

@@ -28,6 +28,7 @@
 
 /* Layout geral
 --------------------------------------------------------------------------------------------------------------- */
+#site-logo {max-height: 75px; max-width: 95vw;}
 #breadcrumb {padding-top: 30px; color: #FFFFFF;}
 .content {margin-bottom: 4rem;}
 .content a {display: block;}
