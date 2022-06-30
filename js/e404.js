@@ -34,16 +34,26 @@ let frases = [
 	{title: "Frase inspiradora", text: "Suba o primeiro degrau com fé. Não é necessário que você veja toda a escada. Apenas dê o primeiro passo (Martin Luther King - autoria controversa)"},
 	{title: "Frase inspiradora", text: "Não é o mais forte que sobrevive, nem o mais inteligente, mas o que melhor se adapta às mudanças (Leon C. Megginson)"},
 	{title: "Frase inspiradora", text: "Não abandone suas três grandes e inabaláveis amigas: a intuição, a inocência e a fé (George Gurdjieff)"},	
-	{title: "Você sabia?", text: "Uma lenda urbana diz que os alunos que entram para a Protut passam em Cálculo 1"},
-	{title: "Frase engraçada", text: "Se você cair, eu estarei aqui - disse o chão"},
-	{title: "Frase engraçada", text: "O mundo se divide entre os que encontram e os que nem sabem onde puseram (Millôr Fernandes)"},
-	{title: "Frase engraçada", text: "O amor é um sonho… mas o casamento é o despertador"},
-	{title: "Frase engraçada", text: "O dinheiro não é tudo. Não se esqueça também do ouro, dos diamantes, da platina e das propriedades (Tom Jobim)"},
-	{title: "Frase engraçada", text: "O segredo é amar o próximo, porque o anterior não merecia!"},
-	{title: "Frase engraçada", text: "Há duas palavras que abrem muitas portas: Puxe e empurre"},
-	{title: "Frase engraçada", text: "O amor está mesmo cego, pois não me vê de jeito nenhum"},
-	{title: "Frase engraçada", text: "Os loucos veem gnomos, e os psicólogos tentam capturar eles"},
-	{title: "Frase engraçada", text: "Eu perderia peso, mas eu odeio perder"},
+	{title: "Frase inspiradora", text: "Não sou aquele que sabe, mas aquele que busca (Hermann Hesse)"},
+	{title: "Frase inspiradora", text: "Não há nada mais bonito do que quando você prova a si mesmo o quão forte você é (autoria desconhecida)"},
+	{title: "Frase inspiradora", text: "Só vive o propósito quem suporta o processo (autoria desconhecida)"},
+	
+	{title: "Você sabia?", text: "Uma lenda urbana diz que os alunos que entram para a Protut passam em Cálculo 1..."},
+	{title: "Você sabia?", text: "Este site foi criado manualmente a partir de um template de HTML/CSS. E sim, deu bastante trabalho..."},
+	{title: "Você sabia?", text: "Em 2022, a UTFPR de Ponta Grossa tinha mais 4 empresas juniores além da Protut. São elas: Petri (Eng. de Bioprocessos e Biotecnologia), Quanttum (Eng. Química), Solumax (Eng. de Produção) e Vulcano (Eng. Mecânica)"},
+	{title: "Você sabia?", text: "Uma das corujas mais conhecidas no Brasil é a coruja-buraqueira. Diferentemente da maioria das outras corujas, esta coruja tem hábitos diurnos"},
+	{title: "Você sabia?", text: 'A expressão "mãe coruja" surgiu por causa da fábula "A coruja e a águia", popularizada no Brasil por Monteiro Lobato'},
+	
+	{title: "Frase divertida", text: "Se você cair, eu estarei aqui - disse o chão"},
+	{title: "Frase divertida", text: "Definição de urso polar: um urso retangular, depois da conversão de coordenadas"},
+	{title: "Frase divertida", text: "O mundo se divide entre os que encontram e os que nem sabem onde puseram (Millôr Fernandes)"},
+	{title: "Frase divertida", text: "O amor é um sonho… mas o casamento é o despertador"},
+	{title: "Frase divertida", text: "O dinheiro não é tudo. Não se esqueça também do ouro, dos diamantes, da platina e das propriedades (Tom Jobim)"},
+	{title: "Frase divertida", text: "O segredo é amar o próximo, porque o anterior não merecia!"},
+	{title: "Frase divertida", text: "Há duas palavras que abrem muitas portas: Puxe e empurre"},
+	{title: "Frase divertida", text: "O amor está mesmo cego, pois não me vê de jeito nenhum"},
+	{title: "Frase divertida", text: "Os loucos veem gnomos, e os psicólogos tentam capturá-los"},
+	{title: "Frase divertida", text: "Eu perderia peso, mas eu odeio perder"}
 ];
 
 
