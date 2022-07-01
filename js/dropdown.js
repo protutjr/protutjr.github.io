@@ -1,7 +1,3 @@
-function toggleDropdownState() {
-
-}
-
 function dropdownListener(evt) {
     if (evt.target.tagName.toLowerCase() != "header") return;
     

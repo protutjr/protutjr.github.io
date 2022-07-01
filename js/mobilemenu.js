@@ -2,8 +2,6 @@
  * Author: Celso Ubaldo
  */
 
-let is404Page = !!document.getElementById("error404");
-
 function goToPage(href) {
     if (href != "#")
         window.location = href;
@@ -27,6 +25,10 @@ function createOptgroup(label) {
     return optgroup;
 }
 
+// Detectar se está na página de Erro 404
+let is404Page = !!document.getElementById("error404");
+
+// Adicionar as <option> ao menu mobile
 document.querySelectorAll("#mainav > ul > li").forEach((elm) => {
     let menu = document.getElementById("mobilemenu");
     let foo = elm.querySelector("a:first-child");
@@ -43,4 +45,5 @@ document.querySelectorAll("#mainav > ul > li").forEach((elm) => {
     }
 });
 
+// Selecionar a opção "MENU" se estiver na página de Erro 404
 document.getElementById("mobilemenu")[0].selected = is404Page;
