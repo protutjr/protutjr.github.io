@@ -1,4 +1,4 @@
-/* Mobile menu creator, with vanilla JS
+/* Mobile menu creator, with vanilla JS 
  * Author: Celso Ubaldo
  */
 
@@ -25,27 +25,25 @@ function createOptgroup(label) {
     return optgroup;
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-	// Adicionar as <option> ao menu mobile
-	document.querySelectorAll("#mainav > ul > li").forEach((elm) => {
-		let menu = document.getElementById("mobilemenu");
-		let foo = elm.querySelector("a:first-child");
-		if (!foo.classList.contains("drop")) {        
-			let option = createOption(foo.innerText, foo.href);
-			menu.appendChild(option);
-		} else {
-			let optgroup = createOptgroup(foo.innerText);
-			elm.querySelectorAll("a:not(.drop)").forEach((elm2) => {
-				let option = createOption(elm2.innerHTML || elm2.textContent, elm2.href);
-				optgroup.appendChild(option);
-			});
-			menu.appendChild(optgroup);
-		}
-	});
+// Detectar se está na página de Erro 404
+let is404Page = !!document.getElementById("error404");
 
-	// Detectar se está na página de Erro 404
-	let is404Page = !!document.getElementById("error404");
-	// Selecionar a opção "MENU" se estiver na página de Erro 404
-	document.getElementById("mobilemenu")[0].selected = is404Page;
-	
+// Adicionar as <option> ao menu mobile
+document.querySelectorAll("#mainav > ul > li").forEach((elm) => {
+    let menu = document.getElementById("mobilemenu");
+    let foo = elm.querySelector("a:first-child");
+    if (!foo.classList.contains("drop")) {        
+        let option = createOption(foo.innerText, foo.href);
+        menu.appendChild(option);
+    } else {
+        let optgroup = createOptgroup(foo.innerText);
+        elm.querySelectorAll("a:not(.drop)").forEach((elm2) => {
+            let option = createOption(elm2.innerHTML || elm2.textContent, elm2.href);
+            optgroup.appendChild(option);
+        });
+        menu.appendChild(optgroup);
+    }
 });
+
+// Selecionar a opção "MENU" se estiver na página de Erro 404
+document.getElementById("mobilemenu")[0].selected = is404Page;
