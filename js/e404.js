@@ -77,5 +77,3 @@ function randomIndex(maxValue) {
 	while (newIndex == currentIndex);
 	return newIndex;
 }
-
-

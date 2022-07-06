@@ -4,8 +4,13 @@
     from {opacity: 0;}
     to {opacity: 1;}
 }
+@keyframes dropdownAnimation {
+    from {box-shadow: 0 0 1em #888888;}
+    to {box-shadow: none;}
+}
 .hover-zoom:hover {transform: scale(1.1);}
 .top-layer { animation-name: showSlide; animation-timing-function: ease-in-out; animation-duration: 2s;}
+.dropdown-animation { animation-name: dropdownAnimation; animation-duration: 1.5s;}
 
 /* Botões
 --------------------------------------------------------------------------------------------------------------- */
@@ -82,7 +87,7 @@ h6 {font-size: 1rem;}
 /* Formulários da página de Contato
 --------------------------------------------------------------------------------------------------------------- */
 .b24-form input[type='checkbox'] {display: inline;}
-.b24-form-dropdown-title {font-size: 4vw !important; white-space: normal !important;}
+.b24-form-dropdown-title {font-size: 4vw !important; white-space: normal !important; font-weight: 600;}
 #contact-form-loading {width: 100%; padding: 8px 12px; text-align: center; background: #F0F0F0; color: #606060; font-size: 1.2rem;}
 #contact-form-loading {display: none;}
 #contact-form > div:only-of-type {display: block !important;}
