@@ -10,7 +10,7 @@
 }
 .hover-zoom:hover {transform: scale(1.1);}
 .top-layer { animation-name: showSlide; animation-timing-function: ease-in-out; animation-duration: 2s;}
-.dropdown-animation { animation-name: dropdownAnimation; animation-duration: 1.5s;}
+.dropdown-animation { animation-name: dropdownAnimation; animation-duration: 3s;}
 
 /* Botões
 --------------------------------------------------------------------------------------------------------------- */
@@ -65,8 +65,7 @@ h6 {font-size: 1rem;}
 
 .shadow {box-shadow: #171515;}
 .shadow-text {text-shadow: 1px 1px 10px #313131;}
-.justify {text-align: justify;}
-.jusp p {text-align: justify;}
+.justify, .jusp p {text-align: justify;}
 
 /* Backgrounds
 --------------------------------------------------------------------------------------------------------------- */
@@ -108,5 +107,7 @@ h6 {font-size: 1rem;}
 	h2 {font-size: 2rem;}
 	h3 {font-size: 1.7rem;}
 	h4 {font-size: 1.4rem;}
-	h5 {font-size: 1.2rem;}	
+	h5 {font-size: 1.2rem;}
+	/* Ativar hifenização */
+	.justify, .jusp p {-webkit-hyphens: auto; -ms-hyphens: auto; hyphens: auto; hyphenate-limit-chars: 7 4 3;}
 }
