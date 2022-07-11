@@ -86,7 +86,7 @@ h6 {font-size: 1rem;}
 /* Formulários da página de Contato
 --------------------------------------------------------------------------------------------------------------- */
 .b24-form input[type='checkbox'] {display: inline;}
-.b24-form-dropdown-title {font-size: 4vw !important; white-space: normal !important; font-weight: 600;}
+.b24-form-dropdown-title {font-size: 4vw !important; white-space: normal !important; font-weight: 600 !important;}
 #contact-form-loading {width: 100%; padding: 8px 12px; text-align: center; background: #F0F0F0; color: #606060; font-size: 1.2rem;}
 #contact-form-loading {display: none;}
 #contact-form > div:only-of-type {display: block !important;}

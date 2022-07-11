@@ -14,9 +14,10 @@ window.addEventListener("load", () => {
         container.addEventListener("click", dropdownListener);
     }
     let hash = window.location.hash.toString().replace("#","");
-    if (hash && document.getElementById(hash)) {
+    if (hash && document.getElementById(hash)) {		
 		let elm = document.getElementById(hash);
 		elm.classList.add("dropdown-visible");
 		elm.classList.add("dropdown-animation");
+		window.scrollBy(0, -10);
 	}
 });
