@@ -46,9 +46,9 @@
 
 /* Dropdowns
 --------------------------------------------------------------------------------------------------------------- */
-.dropdown {background-color: #FF4625; margin: 10px 0; position: relative;}
+.dropdown {background-color: #D7612F; margin: 10px 0; position: relative;}
 .dropdown:not(.dropdown-visible) div {display: none;}
-.dropdown:hover {background-color: #DE3D20;}
+.dropdown:hover {background-color: #BA5429;}
 .dropdown header {color: white; padding: 8px 27px 8px 12px; font-weight: 600; text-align:justify; cursor: pointer; width: 100%;}
 .dropdown header::after {content: '\f0d7'; font-family: "FontAwesome"; padding: 8px 12px; position: absolute; right: 0px; top: 0px;}
 .dropdown.dropdown-visible header::after {content: '\f0d8';}
