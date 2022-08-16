@@ -84,12 +84,10 @@ h6 {font-size: 1rem;}
 .row-footer, .row-footer a{color:#CBCBCB; background-color:#4A4E57;}
 
 /* Formulários da página de Contato
---------------------------------------------------------------------------------------------------------------- */
-.b24-form input[type='checkbox'] {display: inline;}
-.b24-form-dropdown-title {font-size: 4vw !important; white-space: normal !important; font-weight: 600 !important;}
+-------------------------------------------------------------------------------------------------------------- */
+#contact-form {background-color: rgb(250, 227, 225); border-radius: 6px; border: 1px solid #CACACA;}
 #contact-form-loading {width: 100%; padding: 8px 12px; text-align: center; background: #F0F0F0; color: #606060; font-size: 1.2rem;}
 #contact-form-loading {display: none;}
-#contact-form > div:only-of-type {display: block !important;}
 #contact-info {padding: 12px; background: #F6F6F6; border: 1px solid #CBCBCB; margin-top: 20px;}
 #contact-info h5 {text-align: center;}
 #contact-info h6 {margin: 15px 0px 0px;}
