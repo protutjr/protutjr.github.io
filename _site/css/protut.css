@@ -1,0 +1,111 @@
+/* Animações
+--------------------------------------------------------------------------------------------------------------- */
+@keyframes showSlide {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes dropdownAnimation {
+    from {box-shadow: 0 0 1em #888888;}
+    to {box-shadow: none;}
+}
+.hover-zoom:hover {transform: scale(1.1);}
+.top-layer { animation-name: showSlide; animation-timing-function: ease-in-out; animation-duration: 2s;}
+.dropdown-animation { animation-name: dropdownAnimation; animation-duration: 3s;}
+
+/* Botões
+--------------------------------------------------------------------------------------------------------------- */
+.btn-orange {display:inline-block; padding:8px 18px 10px; text-transform: uppercase; border:1px solid #E43F21; color:#FFFFFF; background-color:#E43F21;}
+.btn-big {font-size: 1.2rem; padding: 16px 20px;}
+.btn-rounded, .nav-emphasys, .nav-emphasys:hover {color: #FFFFFF !important; background-color: #E43F21 !important; padding: 8px !important; border-radius: 5px;}
+#contact-btn-container {display: flex;}
+#contact-btn-container a {display: block; margin: auto;}
+
+/* Botões redes sociais (dependem do Font Awesome)
+--------------------------------------------------------------------------------------------------------------- */
+.btn-social {display:block; height: 40px; width:100%; margin: 10px 4px; line-height:40px; font-size:20px; text-align:center;}
+.btn-social {color:#FFFFFF; background-color: #888888; font-family: "Open Sans", Roboto, Arial, Verdana, sans-serif;}
+.btn-social:hover {filter: brightness(120%);}
+.btn-facebook {background-color: #3B5998}
+.btn-blog {background-color: #534F4F;}
+.btn-linkedin {background-color: #0E76A8;}
+.btn-instagram {background-color: #A43C76;}
+.btn-github {background-color: #171515;}
+
+/* Layout geral
+--------------------------------------------------------------------------------------------------------------- */
+#site-logo {max-height: 75px; max-width: 95vw;}
+#breadcrumb {padding-top: 30px; color: #FFFFFF;}
+.content {margin-bottom: 4rem;}
+.content a {display: block;}
+.content img {max-width: 100%;}
+.red-gradient {background: linear-gradient(180deg, #9D2E19, #C6422B);}
+.green-gradient {background: linear-gradient(180deg, #197341, #1F9454);}
+.blue-gradient {background: linear-gradient(180deg, #184B78, #20629B);}
+.purple-gradient {background: linear-gradient(180deg, #640C3F, #8E146E);}
+.orange-gradient {background: linear-gradient(180deg, #B9470F, #C66F22);}
+
+/* Dropdowns
+--------------------------------------------------------------------------------------------------------------- */
+.dropdown {background-color: #D7612F; margin: 10px 0; position: relative;}
+.dropdown:not(.dropdown-visible) div {display: none;}
+.dropdown:hover {background-color: #BA5429;}
+.dropdown header {color: white; padding: 8px 27px 8px 12px; font-weight: 600; text-align:justify; cursor: pointer; width: 100%;}
+.dropdown header::after {content: '\f0d7'; font-family: "FontAwesome"; padding: 8px 12px; position: absolute; right: 0px; top: 0px;}
+.dropdown.dropdown-visible header::after {content: '\f0d8';}
+.dropdown div {padding: 6px 12px; background-color: #F1F1F1;}
+
+/* Formatação e efeitos de texto
+--------------------------------------------------------------------------------------------------------------- */
+h1 {font-size: 6rem;}
+h2 {font-size: 3.75rem;}
+h3 {font-size: 2.5rem;}
+h4 {font-size: 2rem;}
+h5 {font-size: 1.5rem;}
+h6 {font-size: 1rem;}
+
+.shadow {box-shadow: #171515;}
+.shadow-text {text-shadow: 1px 1px 10px #313131;}
+.justify, .jusp p {text-align: justify;}
+
+/* Backgrounds
+--------------------------------------------------------------------------------------------------------------- */
+.bgded {position: relative;}
+.bg-img {position: absolute; top:0; left:0; width: 100%; height: 100%; background-repeat: no-repeat; background-size: cover; background-position: 70% 50%;}
+.bg-text {position: relative; z-index: 100;}
+.bg-gradient {background: linear-gradient(180deg, #18100da8, #2424249c); position: relative; z-index: 99;}
+.bg-fallback {z-index: 1;}
+
+/* Linhas
+--------------------------------------------------------------------------------------------------------------- */
+.row-white {color:#646464; background-color:#FFFFFF;}
+.row-light-gray {color:#555555; background-color:#E8E8E8;}
+.row-dark-gray {color:#CBCBCB; background-color:#32353C;}
+.row-orange {color: #FFFFFF; background-color: #E43F21;}
+.row-footer, .row-footer a{color:#CBCBCB; background-color:#4A4E57;}
+
+/* Formulários da página de Contato
+-------------------------------------------------------------------------------------------------------------- */
+#contact-form {background-color: rgb(250, 227, 225); border-radius: 6px; border: 1px solid #CACACA;}
+#contact-form-loading {width: 100%; padding: 8px 12px; text-align: center; background: #F0F0F0; color: #606060; font-size: 1.2rem;}
+#contact-form-loading {display: none;}
+#contact-info {padding: 12px; background: #F6F6F6; border: 1px solid #CBCBCB; margin-top: 20px;}
+#contact-info h5 {text-align: center;}
+#contact-info h6 {margin: 15px 0px 0px;}
+#contact-info a, #contact-info address, #contact-info p {font-size: 14px; text-align: justify; display: block;}
+#contact-info p {margin: 4px 0px; font-weight: 600;}
+
+/* Responsividade
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:900px){
+	h1 {font-size: 4.5rem;}
+	h2 {font-size: 3.5rem;}
+}
+@media screen and (max-width:650px){
+	h1 {font-size: 3rem;}
+	h2 {font-size: 2rem;}
+	h3 {font-size: 1.7rem;}
+	h4 {font-size: 1.4rem;}
+	h5 {font-size: 1.2rem;}
+	/* Ativar hifenização */
+	.justify, .jusp p {-webkit-hyphens: auto; -ms-hyphens: auto; hyphens: auto; hyphenate-limit-chars: 7 4 3;}
+}

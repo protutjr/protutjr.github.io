@@ -24,8 +24,10 @@ Licence URI: https://www.os-templates.com/template-terms
           </address>
         </li>        
         <li><i class="fa fa-envelope-o"></i> <span>contato.</span>protut<span>@gmail.com</span></li>
-        <li><i class="fa fa-whatsapp"></i> (15) 99689-4445 (Celso)</li>
-        <li><i class="fa fa-whatsapp"></i> (42) 99926-1319 (Marcelo)</li>
+        <!-- Links de contato dos membros no WhatsApp -->
+		{% for contato in site.data.contatos %}
+			<li><i class="fa fa-whatsapp"></i> {{ contato.telefone_formatado }} ({{ contato.nome }})</li>			
+		{% endfor %}        
         <li></li>
       </ul>
       <div id="contact-btn-container">
@@ -37,7 +39,7 @@ Licence URI: https://www.os-templates.com/template-terms
       <h6 class="heading">Nossas redes sociais</h6>
       <ul class="clear" style="list-style:none;">
         <li>
-          <a class="btn-social btn-facebook" href="https://www.facebook.com/protutempresajunior" target="_blank">
+          <a class="btn-social btn-facebook" href="https://www.facebook.com/protutjr" target="_blank">
             <span><i class="fa fa-facebook"></i>&nbsp; Facebook</span>
           </a>
 		    </li>
@@ -63,7 +65,7 @@ Licence URI: https://www.os-templates.com/template-terms
 
 <div class="wrapper row-footer">
   <div id="copyright" class="hoc clear">
-    <p class="fl_left">Copyright &copy; <span id="year">2022</span> - Todos os direitos reservados - <a href="./index.html">Protut Soluções em Energia</a></p>
+    <p class="fl_left">Copyright &copy; <span id="year">2023</span> ― Todos os direitos reservados ― <a href="./index.html">Protut - Elétrica e Automação</a></p>
     <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
     <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
   </div>

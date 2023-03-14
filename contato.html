@@ -1,5 +1,5 @@
 ---
-# Protut Soluções em Energia
+# Protut - Elétrica e Automação
 ---
 <!DOCTYPE html>
 <!--
@@ -14,7 +14,7 @@ Licence URI: https://www.os-templates.com/template-terms
 
 <head>
     <!-- Título desta página -->
-    <title>Contato - Protut Soluções em Energia</title>
+    <title>Contato | Protut - Elétrica e Automação</title>
     
 	<!-- Tags compartilhadas do cabeçalho -->
     {% include tags_comuns.html %}
@@ -40,7 +40,7 @@ Licence URI: https://www.os-templates.com/template-terms
       <h3 class="center">Fale conosco</h3>      
 	  <p class="center">Envie-nos uma mensagem online. Responderemos o mais rápido possível.</p>
 	  <section id="contact-form" class="btmspace-30">
-		  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdk0xxc6qV8wY75qFNlFeUU0Lf8afJCQyo8UgMKlU3MD4nJ7Q/viewform?embedded=true" style="width: 100%; min-height: 650px;" frameborder="0" marginheight="0" marginwidth="0">
+		  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdk0xxc6qV8wY75qFNlFeUU0Lf8afJCQyo8UgMKlU3MD4nJ7Q/viewform?embedded=true" style="width: 100%; min-height: 660px;" frameborder="0" marginheight="0" marginwidth="0">
 			<div id="contact-form-loading">
 			  <p><i class="fa fa-refresh fa-spin"></i> Aguarde um instante. Carregando formulário&hellip;</p>
 		  </div>
@@ -52,22 +52,27 @@ Licence URI: https://www.os-templates.com/template-terms
     <div id="contact-info" class="sidebar one_quarter jusp">
 		  <h5>Dados de contato</h5>
 		  <h6><i class="fa fa-whatsapp"></i> WhatsApp (apenas mensagens):</h6>
-		  <a href="https://api.whatsapp.com/send?phone=5515996894445&text=Ol%C3%A1,%20acessei%20o%20site%20da%20Protut%20e%20me%20interessei%20nos%20servi%C3%A7os%20da%20empresa,%20podemos%20conversar%3F" target="__blank">(15) 99689-4445 (Celso)</a>
-		  <a href="https://api.whatsapp.com/send?phone=5542999261319&text=Ol%C3%A1,%20acessei%20o%20site%20da%20Protut%20e%20me%20interessei%20nos%20servi%C3%A7os%20da%20empresa,%20podemos%20conversar%3F" target="__blank">(42) 99926-1319 (Marcelo)</a>
+		  
+		  <!-- Link de contato dos membros no WhatsApp -->
+		  {% for contato in site.data.contatos %}
+				<a href="https://api.whatsapp.com/send?phone=55{{ contato.telefone }}&text=Ol%C3%A1,%20acessei%20o%20site%20da%20Protut%20e%20me%20interessei%20nos%20servi%C3%A7os%20da%20empresa,%20podemos%20conversar%3F" target="__blank">
+					{{ contato.telefone_formatado }} ({{ contato.nome }})
+				</a>						
+		  {% endfor %}
 		  
 		  <h6><i class="fa fa-envelope-o"></i> Nosso e-mail:</h6>
 		  <p><span>contato.</span><span>protut@gmail.com</span></p>
 		  
 		  <h6><i class="fa fa-globe"></i> Nossas redes sociais:</h6>
 		  <a href="https://www.instagram.com/protutjr" target="_blank">Instagram</a>
-		  <a href="https://www.facebook.com/protutempresajunior" target="_blank">Facebook</a>
+		  <a href="https://www.facebook.com/protutjr" target="_blank">Facebook</a>
 		  <a href="https://www.linkedin.com/company/protut" target="_blank">LinkedIn</a>
 		  
 		  <h6><i class="fa fa-map-marker"></i> Nosso endereço:</h6>
 		  <address>
 			UTFPR campus Ponta Grossa - Bloco C, sala C-012A.<br>
             Rua Washington Subtil Chueire, nº 330, 84017-220. Ponta Grossa/PR
-            <a href="https://goo.gl/maps/BqAhdFfbFUR6SrXe9" target="__blank">Ver no Google Maps &raquo;</a>
+            <a href="https://goo.gl/maps/PtQTJCwRziMrTemx6" target="__blank">Ver no Google Maps &raquo;</a>
           </address>
 	</div>
 	
