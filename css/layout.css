@@ -40,7 +40,7 @@ File: Layout CSS
 
 .services li{padding:40px 0 0 0; text-align:center;}
 .services li:last-child{margin-bottom:0;}/* Used when elements stack in small viewports */
-.services li article{display:block; position:relative; padding:65px 20px 25px 20px;}
+.services li article{display:block; position:relative; padding:35px 20px 25px 20px;}
 .services li article i{display:inline-block; position:absolute; top:0; left:50%; width:80px; height:80px; line-height:78px; margin:-40px 0 0 -40px; border:2px solid; border-radius:50%; font-size:36px; z-index:1;}
 .services li article .heading{font-size:1.2rem;}
 .services li article footer{margin-top:25px;}

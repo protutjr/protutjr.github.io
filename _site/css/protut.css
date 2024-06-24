@@ -8,6 +8,10 @@
     from {box-shadow: 0 0 1em #888888;}
     to {box-shadow: none;}
 }
+@keyframes loadingAnimation {
+    from {background-color: #B9B9B9;}
+    to {background-color: #E8E8E8;}
+}
 .hover-zoom:hover {transform: scale(1.1);}
 .top-layer { animation-name: showSlide; animation-timing-function: ease-in-out; animation-duration: 2s;}
 .dropdown-animation { animation-name: dropdownAnimation; animation-duration: 3s;}
@@ -19,6 +23,13 @@
 .btn-rounded, .nav-emphasys, .nav-emphasys:hover {color: #FFFFFF !important; background-color: #E43F21 !important; padding: 8px !important; border-radius: 5px;}
 #contact-btn-container {display: flex;}
 #contact-btn-container a {display: block; margin: auto;}
+
+/* Integração com o Google Drive (GPD)
+--------------------------------------------------------------------------------------------------------------- */
+.loading {border: none; background-color: #B9B9B9; animation: loadingAnimation 1s ease-in-out 0s infinite alternate;}
+.services li article.loading{color: transparent; border: none; background-color: #B9B9B9; height: 220pt; animation: loadingAnimation 1s ease-in-out 0s infinite alternate;}
+.services li article.loading i{background-color: #B9B9B9; animation: loadingAnimation 1s ease-in-out 0s infinite alternate;}
+#template-service-homepage + li {margin: 0; clear: left;}
 
 /* Botões redes sociais (dependem do Font Awesome)
 --------------------------------------------------------------------------------------------------------------- */
@@ -38,6 +49,9 @@
 .content {margin-bottom: 4rem;}
 .content a {display: block;}
 .content img {max-width: 100%;}
+.padding-small { padding: 10px; }
+.padding-medium { padding: 16px; }
+.padding-big { padding: 22px; }
 .red-gradient {background: linear-gradient(180deg, #9D2E19, #C6422B);}
 .green-gradient {background: linear-gradient(180deg, #197341, #1F9454);}
 .blue-gradient {background: linear-gradient(180deg, #184B78, #20629B);}

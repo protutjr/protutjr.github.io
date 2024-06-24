@@ -51,15 +51,9 @@ Licence URI: https://www.os-templates.com/template-terms
     
     <div id="contact-info" class="sidebar one_quarter jusp">
 		  <h5>Dados de contato</h5>
-		  <h6><i class="fa fa-whatsapp"></i> WhatsApp (apenas mensagens):</h6>
-		  
-		  <!-- Link de contato dos membros no WhatsApp -->
-		  {% for contato in site.data.contatos %}
-				<a href="https://api.whatsapp.com/send?phone=55{{ contato.telefone }}&text=Ol%C3%A1,%20acessei%20o%20site%20da%20Protut%20e%20me%20interessei%20nos%20servi%C3%A7os%20da%20empresa,%20podemos%20conversar%3F" target="__blank">
-					{{ contato.telefone_formatado }} ({{ contato.nome }})
-				</a>						
-		  {% endfor %}
-		  
+		  <h6><i class="fa fa-whatsapp"></i> Nosso número:</h6>
+		  <div id="contact-list"></div>
+
 		  <h6><i class="fa fa-envelope-o"></i> Nosso e-mail:</h6>
 		  <p><span>contato.</span><span>protut@gmail.com</span></p>
 		  
@@ -70,7 +64,8 @@ Licence URI: https://www.os-templates.com/template-terms
 		  
 		  <h6><i class="fa fa-map-marker"></i> Nosso endereço:</h6>
 		  <address>
-			UTFPR campus Ponta Grossa - Bloco C, sala C-012A.<br>
+			UTFPR campus Ponta Grossa - Bloco A - piso inferior.
+			<br>
             Rua Washington Subtil Chueire, nº 330, 84017-220. Ponta Grossa/PR
             <a href="https://goo.gl/maps/PtQTJCwRziMrTemx6" target="__blank">Ver no Google Maps &raquo;</a>
           </address>

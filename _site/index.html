@@ -12,17 +12,19 @@ Licence URI: https://www.os-templates.com/template-terms
 <head>
     <!-- Título desta página -->
     <title>Página Inicial | Protut - Elétrica e Automação</title>
-
+	<meta name="description" content="Empresa Júnior de Engenharia Elétrica e Automação Industrial da UTFPR de Ponta Grossa">
+    <!-- Integração GPD - landing page -->
+    <script src="http://localhost:4000/cumulonimbus/js/gpd_landing.js" defer></script>    
     <!-- Tags compartilhadas do cabeçalho -->
-    <link rel="icon" href="./favicon.png" type="image/png">
+    <link rel="icon" href="http://localhost:4000/cumulonimbus/favicon.png" type="image/png">
 <link rel="icon" href="./favicon.svg" type="image/svg+xml">
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 <!-- CSS -->
-<link href="./css/layout.css" rel="stylesheet" type="text/css" media="all">
-<link href="./css/protut.css" rel="stylesheet">
+<link href="/cumulonimbus/css/layout.css" rel="stylesheet" type="text/css" media="all">
+<link href="/cumulonimbus/css/protut.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 
 <!-- FONTES -->   
@@ -30,8 +32,11 @@ Licence URI: https://www.os-templates.com/template-terms
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Overpass:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
 
 <!-- JAVASCRIPT -->
-<script src="./js/jquery.min.js"></script>
-<script src="./js/jquery.backtotop.js" defer></script>
+<script src="http://localhost:4000/cumulonimbus/js/jquery.min.js"></script>
+<script src="http://localhost:4000/cumulonimbus/js/jquery.backtotop.js" defer></script>
+<script src="http://localhost:4000/cumulonimbus/js/gpd_contatos.js"></script>
+<script src="http://localhost:4000/cumulonimbus/js/gpd_integration.js"></script>
+
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-099HR3NL2L"></script>
@@ -42,6 +47,7 @@ Licence URI: https://www.os-templates.com/template-terms
 
   gtag('config', 'G-099HR3NL2L');
 </script>
+    
 </head>
 
 <body id="top">
@@ -62,8 +68,8 @@ Licence URI: https://www.os-templates.com/template-terms
 
 <div class="wrapper row-white">
   <header id="header" class="hoc clear" style="padding: 10px 0px;"> 
-    <a href="./index.html">
-		<img id="site-logo" src="./images/protut.svg" alt="Logo da Protut">
+    <a href="http://localhost:4000/cumulonimbus/index.html">
+		<img id="site-logo" src="http://localhost:4000/cumulonimbus/images/protut.svg">
     </a>
   </header>
 </div>
@@ -71,17 +77,17 @@ Licence URI: https://www.os-templates.com/template-terms
 <div class="wrapper row-dark-gray">
   <nav id="mainav" class="hoc clear"> 
     <ul class="clear">
-      <li><a href="./index.html">Página inicial</a></li>
-      <li><a href="./servicos.html">Serviços</a></li>
-      <li><a href="./processo-seletivo.html">Processo Seletivo</a></li>
+      <li><a href="http://localhost:4000/cumulonimbus/index.html">Página inicial</a></li>
+      <li><a href="http://localhost:4000/cumulonimbus/servicos.html">Serviços</a></li>
+      <li><a href="http://localhost:4000/cumulonimbus/processo-seletivo.html">Processo Seletivo</a></li>
       <li><a class="drop" href="#">Sobre nós</a>
         <ul>
-          <li><a href="./quem-somos.html">Quem somos</a></li>                    
-          <li><a href="./mej.html">Movimento Empresa Júnior</a></li>
-          <li><a href="./faq.html">Perguntas Frequentes</a></li>    
+          <li><a href="http://localhost:4000/cumulonimbus/quem-somos.html">Quem somos</a></li>                    
+          <li><a href="http://localhost:4000/cumulonimbus/mej.html">Movimento Empresa Júnior</a></li>
+          <li><a href="http://localhost:4000/cumulonimbus/faq.html">Perguntas Frequentes</a></li>    
         </ul>
       </li>      
-      <li><a class="nav-emphasys hover-zoom" href="./contato.html">Contato</a></li>
+      <li><a class="nav-emphasys hover-zoom" href="http://localhost:4000/cumulonimbus/contato.html">Contato</a></li>
     </ul>
     <form action="#">
       <select id="mobilemenu" onchange="goToPage(this.value);">
@@ -92,9 +98,9 @@ Licence URI: https://www.os-templates.com/template-terms
 </div>
 
 <!-- Ativar menu mobile -->
-<script src="./js/mobilemenu.js" defer></script>
+<script src="http://localhost:4000/cumulonimbus/js/mobilemenu.js" defer></script>
 <!-- Logos temáticos do site -->
-<script src="./js/holidays.js" defer></script>
+<script src="http://localhost:4000/cumulonimbus/js/holidays.js" defer></script>
 
 
 <!-- Seção de apresentação -->
@@ -106,7 +112,7 @@ Licence URI: https://www.os-templates.com/template-terms
     <div class="bg-img" onerror="this.remove();" style="background-image: url('./images/backgrounds/pcb.webp');"></div>
     <div class="bg-img" onerror="this.remove();" style="background-image: url('./images/backgrounds/painel_clp.webp');"></div>
     <div class="bg-img" onerror="this.remove();" style="background-image: url('./images/backgrounds/painel_solar.webp');"></div>
-    <script src="./js/slideshow.js" defer></script>
+    <script src="./js/slideshow.js" defer></script>    
   </div>
   
   <div id="pageintro" class="center bg-text bg-gradient"> 
@@ -127,34 +133,35 @@ Licence URI: https://www.os-templates.com/template-terms
       <p>Temos um portfólio completo para atender às suas necessidades</p>
     </div>
 
-    <ul class="nospace group services btmspace-50">
-      <li class="one_third first hover-zoom">
-        <article><i class="fa fa-usd"></i>
-          <h5>Eficiência energética</h5>
-          <p>Obtenha uma análise da eficiência energética do seu processo, melhore a sustentabilidade de seu negócio e economize dinheiro.</p>
-          <footer>
-            <a href="./servicos.html#eficiencia-energetica">Saiba mais &raquo;</a>
-          </footer>
+    <ul class="nospace group services btmspace-50">      
+      <li class="one_third first fake-element">
+        <article class="loading">
+          <i></i>
         </article>
-      </li>          
-      <li class="one_third hover-zoom">
-        <article><i class="fa fa-gears"></i>
-          <h5>Automação Industrial</h5>
-          <p>Automatize processos na sua indústria, aumente a eficiência da produção, reduza custos e tenha maior segurança e confiabilidade.</p>
+      </li>
+      <li class="one_third fake-element">
+        <article class="loading">
+          <i></i>
+        </article>
+      </li>
+      <li class="one_third fake-element">
+        <article class="loading">
+          <i></i>
+        </article>
+      </li>
+	  
+	  <li id="template-service-homepage" class="one_third hover-zoom" style="display: none;" >
+        <article>
+		  <br>
+		  <i class="icon fa"></i>
+          <h5 class="title"></h5>
+          <p class="description"></p>
           <footer>
-            <a href="./servicos.html#automacao-industrial">Saiba mais &raquo;</a>
+            <a href="./servicos.html">Saiba mais &raquo;</a>
           </footer>
         </article>
       </li>
-      <li class="one_third hover-zoom">
-        <article><i class="fa fa-bolt"></i>
-          <h5>Projeto Elétrico</h5>
-          <p>Vai construir ou reformar? Nós fazemos o projeto elétrico para você, garantindo uma instalação eficiente, econômica e segura.</p>
-          <footer>
-            <a href="./servicos.html#projeto-eletrico">Saiba mais &raquo;</a>
-          </footer>
-        </article>
-      </li>
+      
     </ul>
     
     <div class="hoc center">
@@ -244,21 +251,15 @@ Licence URI: https://www.os-templates.com/template-terms
     
     <div class="one_half first">
       <h6 class="heading">Contato</h6>
-      <ul class="nospace linklist contact">        
+      <ul id="contact-footer" class="nospace linklist contact">        
         <li><i class="fa fa-map-marker"></i>
           <address>
-            UTFPR campus Ponta Grossa - Bloco C, sala C-012A.<br>
+            UTFPR campus Ponta Grossa - Bloco A - piso inferior.<br>
             Rua Washington Subtil Chueire, nº 330, 84017-220. Ponta Grossa/PR
           </address>
         </li>        
         <li><i class="fa fa-envelope-o"></i> <span>contato.</span>protut<span>@gmail.com</span></li>
-        <!-- Links de contato dos membros no WhatsApp -->
-		
-			<li><i class="fa fa-whatsapp"></i> (15) 99689-4445 (Celso)</li>			
-		
-			<li><i class="fa fa-whatsapp"></i> (42) 99926-1319 (Marcelo)</li>			
-		        
-        <li></li>
+        <!-- Links de contato dos membros no WhatsApp -->		
       </ul>
       <div id="contact-btn-container">
 		<a class="btn-rounded hover-zoom" href="./contato.html">Mandar mensagem online &raquo;</a>
@@ -283,11 +284,6 @@ Licence URI: https://www.os-templates.com/template-terms
             <span><i class="fa fa-linkedin"></i>&nbsp; LinkedIn</span>
           </a>
 		    </li>
-        <!--li>
-          <a class="btn-social btn-blog" href="https://protutjr.blogspot.com" target="_blank">
-            <span><i class="fa fa-newspaper-o"></i>&nbsp; Blog</span>
-          </a>
-		</li-->
       </ul>     
     </div>
   </footer>
@@ -298,8 +294,49 @@ Licence URI: https://www.os-templates.com/template-terms
     <p class="fl_left">Copyright &copy; <span id="year">2023</span> ― Todos os direitos reservados ― <a href="./index.html">Protut - Elétrica e Automação</a></p>
     <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
     <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
-  </div>
+  </div>  
 </div>
+
+<div id="cookies" style="position: sticky; bottom: 0px; z-index: 100; background: #F0F0F0; display: none;" class="wrapper row-white">
+	<div class="hoc clear" style="padding: 8px;">
+		<p class="fl_left" style="margin-right: 10px;">Este site utiliza cookies para melhorar a sua experiência de navegação e para estatísticas.</p>  
+		<a class="btn"  style="cursor: pointer; margin-top: 8px;" onclick="allowCookies();">Entendi</a>
+    </div>
+</div>
+
+<script>
+	if (!getCookie("cookies_allowed")) {
+		document.getElementById("cookies").style.display = "";
+	}
+	
+	function allowCookies() {
+		document.getElementById("cookies").style.display = "none";
+		setCookie("cookies_allowed", "true", 180);		
+	}
+	
+	function setCookie(cname, cvalue, exdays) {
+	  const d = new Date();
+	  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+	  let expires = "expires="+ d.toUTCString();
+	  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/;SameSite=Strict";
+	}
+	
+	function getCookie(cname) {
+	  let name = cname + "=";
+	  let decodedCookie = decodeURIComponent(document.cookie);
+	  let ca = decodedCookie.split(';');
+	  for(let i = 0; i <ca.length; i++) {
+		let c = ca[i];
+		while (c.charAt(0) == ' ') {
+		  c = c.substring(1);
+		}
+		if (c.indexOf(name) == 0) {
+		  return c.substring(name.length, c.length);
+		}
+	  }
+	  return "";
+	}	
+</script>
 
 
 <!-- Botão p/ voltar ao topo da página -->

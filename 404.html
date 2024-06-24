@@ -20,8 +20,8 @@ Licence URI: https://www.os-templates.com/template-terms
     {% include tags_comuns.html %}
     
     <!-- ERROR 404 FILES -->
-    <link href="./css/e404.css" rel="stylesheet">
-    <script src="./js/e404.js"></script>
+    <link href="{{ "/css/e404.css" | absolute_url }}" rel="stylesheet">
+    <script src="{{ "/js/e404.js" | absolute_url }}" ></script>
 </head>
 
 <body id="top">
@@ -35,7 +35,7 @@ Licence URI: https://www.os-templates.com/template-terms
     <div id="error404" class=""> 
       <h3>Ops! A página não foi encontrada.</h3>
       <p>Erro 404</p>
-      <img src="./images/corujut.svg" onclick="showEasterEgg();">
+      <img src="{{ "/images/corujut.svg" | absolute_url }}" onclick="showEasterEgg();">
       <p class="small-txt">Não clique na Corujut</p>
     </div>
     

@@ -16,8 +16,10 @@ Licence URI: https://www.os-templates.com/template-terms
     <!-- Título desta página -->
     <title>Página Inicial | Protut - Elétrica e Automação</title>
 	<meta name="description" content="Empresa Júnior de Engenharia Elétrica e Automação Industrial da UTFPR de Ponta Grossa">
+    <!-- Integração GPD - landing page -->
+    <script src="{{ "/js/gpd_landing.js" | absolute_url }}" defer></script>    
     <!-- Tags compartilhadas do cabeçalho -->
-    {% include tags_comuns.html %}
+    {% include tags_comuns.html %}    
 </head>
 
 <body id="top">
@@ -34,7 +36,7 @@ Licence URI: https://www.os-templates.com/template-terms
     <div class="bg-img" onerror="this.remove();" style="background-image: url('./images/backgrounds/pcb.webp');"></div>
     <div class="bg-img" onerror="this.remove();" style="background-image: url('./images/backgrounds/painel_clp.webp');"></div>
     <div class="bg-img" onerror="this.remove();" style="background-image: url('./images/backgrounds/painel_solar.webp');"></div>
-    <script src="./js/slideshow.js" defer></script>
+    <script src="./js/slideshow.js" defer></script>    
   </div>
   
   <div id="pageintro" class="center bg-text bg-gradient"> 
@@ -55,34 +57,35 @@ Licence URI: https://www.os-templates.com/template-terms
       <p>Temos um portfólio completo para atender às suas necessidades</p>
     </div>
 
-    <ul class="nospace group services btmspace-50">
-      <li class="one_third first hover-zoom">
-        <article><i class="fa fa-usd"></i>
-          <h5>Eficiência energética</h5>
-          <p>Obtenha uma análise da eficiência energética do seu processo, melhore a sustentabilidade de seu negócio e economize dinheiro.</p>
-          <footer>
-            <a href="./servicos.html#eficiencia-energetica">Saiba mais &raquo;</a>
-          </footer>
+    <ul class="nospace group services btmspace-50">      
+      <li class="one_third first fake-element">
+        <article class="loading">
+          <i></i>
         </article>
-      </li>          
-      <li class="one_third hover-zoom">
-        <article><i class="fa fa-gears"></i>
-          <h5>Automação Industrial</h5>
-          <p>Automatize processos na sua indústria, aumente a eficiência da produção, reduza custos e tenha maior segurança e confiabilidade.</p>
+      </li>
+      <li class="one_third fake-element">
+        <article class="loading">
+          <i></i>
+        </article>
+      </li>
+      <li class="one_third fake-element">
+        <article class="loading">
+          <i></i>
+        </article>
+      </li>
+	  
+	  <li id="template-service-homepage" class="one_third hover-zoom" style="display: none;" >
+        <article>
+		  <br>
+		  <i class="icon fa"></i>
+          <h5 class="title"></h5>
+          <p class="description"></p>
           <footer>
-            <a href="./servicos.html#automacao-industrial">Saiba mais &raquo;</a>
+            <a href="./servicos.html">Saiba mais &raquo;</a>
           </footer>
         </article>
       </li>
-      <li class="one_third hover-zoom">
-        <article><i class="fa fa-bolt"></i>
-          <h5>Projeto Elétrico</h5>
-          <p>Vai construir ou reformar? Nós fazemos o projeto elétrico para você, garantindo uma instalação eficiente, econômica e segura.</p>
-          <footer>
-            <a href="./servicos.html#projeto-eletrico">Saiba mais &raquo;</a>
-          </footer>
-        </article>
-      </li>
+      
     </ul>
     
     <div class="hoc center">
