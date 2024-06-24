@@ -13,8 +13,8 @@ Licence URI: https://www.os-templates.com/template-terms
 
 <div class="wrapper row-white">
   <header id="header" class="hoc clear" style="padding: 10px 0px;"> 
-    <a href="{{ "/index.html" | absolute_url }}">
-		<img id="site-logo" src="{{ "/images/protut.svg" alt="Logo da Protut" | absolute_url }}">
+    <a href="{{ "/index.html" | relative_url }}">
+		<img id="site-logo" src="{{ "/images/protut.svg" alt="Logo da Protut" | relative_url }}">
     </a>
   </header>
 </div>
@@ -22,17 +22,17 @@ Licence URI: https://www.os-templates.com/template-terms
 <div class="wrapper row-dark-gray">
   <nav id="mainav" class="hoc clear"> 
     <ul class="clear">
-      <li><a href="{{ "/index.html" | absolute_url }}">Página inicial</a></li>
-      <li><a href="{{ "/servicos.html" | absolute_url }}">Serviços</a></li>
-      <li><a href="{{ "/processo-seletivo.html" | absolute_url }}">Processo Seletivo</a></li>
+      <li><a href="{{ "/index.html" | relative_url }}">Página inicial</a></li>
+      <li><a href="{{ "/servicos.html" | relative_url }}">Serviços</a></li>
+      <li><a href="{{ "/processo-seletivo.html" | relative_url }}">Processo Seletivo</a></li>
       <li><a class="drop" href="#">Sobre nós</a>
         <ul>
-          <li><a href="{{ "/quem-somos.html" | absolute_url }}">Quem somos</a></li>                    
-          <li><a href="{{ "/mej.html" | absolute_url }}">Movimento Empresa Júnior</a></li>
-          <li><a href="{{ "/faq.html" | absolute_url }}">Perguntas Frequentes</a></li>    
+          <li><a href="{{ "/quem-somos.html" | relative_url }}">Quem somos</a></li>                    
+          <li><a href="{{ "/mej.html" | relative_url }}">Movimento Empresa Júnior</a></li>
+          <li><a href="{{ "/faq.html" | relative_url }}">Perguntas Frequentes</a></li>    
         </ul>
       </li>      
-      <li><a class="nav-emphasys hover-zoom" href="{{ "/contato.html" | absolute_url }}">Contato</a></li>
+      <li><a class="nav-emphasys hover-zoom" href="{{ "/contato.html" | relative_url }}">Contato</a></li>
     </ul>
     <form action="#">
       <select id="mobilemenu" onchange="goToPage(this.value);">
@@ -43,6 +43,6 @@ Licence URI: https://www.os-templates.com/template-terms
 </div>
 
 <!-- Ativar menu mobile -->
-<script src="{{ "/js/mobilemenu.js" | absolute_url }}" defer></script>
+<script src="{{ "/js/mobilemenu.js" | relative_url }}" defer></script>
 <!-- Logos temáticos do site -->
-<script src="{{ "/js/holidays.js" | absolute_url }}" defer></script>
+<script src="{{ "/js/holidays.js" | relative_url }}" defer></script>
