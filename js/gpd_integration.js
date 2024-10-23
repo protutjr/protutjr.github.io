@@ -1,9 +1,9 @@
 "use strict";
 
 const DB_URL = 		"https://script.google.com/macros/s/AKfycbzBR00KMCwKKKM-EAK6Jp7iS8rTJhe8tuyRiVsV8mLvxX8w8CYZSq9B8n0R0IN_6NUONQ/exec";
-const FALLBACK_1 = 	"https://script.google.com/macros/s/AKfycbzBR00KMCwKKKM-EAK6Jp7iS8rTJhe8tuyRiVsV8mLvxX8w8CYZSq9B8n0R0IN_6NUONQ/exec?request=homepage_services_list";
-const FALLBACK_2 = 	"https://script.google.com/macros/s/AKfycbzBR00KMCwKKKM-EAK6Jp7iS8rTJhe8tuyRiVsV8mLvxX8w8CYZSq9B8n0R0IN_6NUONQ/exec?request=homepage_services_list";
-const FORM_URL = 	"https://docs.google.com/forms/d/e/1FAIpQLSe5VzcseAQt9lh_OUl5XZgOTo8LeghmZo4O2zsxzSBLDUdikQ/formResponse";
+//const FALLBACK_1 = 	"https://script.google.com/macros/s/AKfycbzBR00KMCwKKKM-EAK6Jp7iS8rTJhe8tuyRiVsV8mLvxX8w8CYZSq9B8n0R0IN_6NUONQ/exec";
+//const FALLBACK_2 = 	"https://script.google.com/macros/s/AKfycbzBR00KMCwKKKM-EAK6Jp7iS8rTJhe8tuyRiVsV8mLvxX8w8CYZSq9B8n0R0IN_6NUONQ/exec";
+//const FORM_URL = 	"https://docs.google.com/forms/d/e/1FAIpQLSe5VzcseAQt9lh_OUl5XZgOTo8LeghmZo4O2zsxzSBLDUdikQ/formResponse";
 
 let siteData = {};
 let siteLoaded = false;

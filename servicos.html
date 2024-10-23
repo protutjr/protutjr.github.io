@@ -16,6 +16,10 @@ Licence URI: https://www.os-templates.com/template-terms
     <!-- Título desta página -->
     <title>Serviços | Protut - Elétrica e Automação</title>
    
+	<!-- Bibiloteca W3.CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/w3-css/4.1.0/w3.min.css" integrity="sha512-Z6UIAdEZ7JNzeX5M/c5QZj+oqbldGD+E8xJEoOwAx5e0phH7kdjsWULGeK5l2UjehKtChHDaUY2rQAF/NEiI9w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Integração GPD - serviços -->
+    <script src="{{ "/js/gpd_servicos.js" | relative_url }}" defer></script>
     <!-- Tags compartilhadas do cabeçalho -->
     {% include tags_comuns.html %}
 </head>
@@ -37,21 +41,42 @@ Licence URI: https://www.os-templates.com/template-terms
 <div class="wrapper row3">
   <main class="hoc container clear">     
     <div class="content justify"> 
-      <h3>Nossos Serviços</h3>
+      <h3 id="nossos-servicos">Nossos Serviços</h3>
       <p>Oferecemos soluções inovadoras e personalizadas nas áreas de Engenharia Elétrica e Automação.</p>
-      <p>Confira nossa lista de serviços abaixo ou <a href="./uploads/servicos.pdf" style="display: inline;" download>baixe nossa carta de serviços em PDF</a>.</p>
+      <p>Confira nossa lista de serviços abaixo ou <a href="https://docs.google.com/document/d/1dSTcu5lPhkXK4PRFg_73-HcuE7dPMOtB7KDzdxNYYSc/export?format=pdf" style="display: inline;" download>baixe nossa carta de serviços em PDF</a>.</p>
       
-      <br>      
-      <section class="dropdown-container">
+      <section id="services-container" class="dropdown-container">
+        
         <div id="loading-services" class="padding-big center" style="background-color: rgba(185, 185, 185, 0.4);">
           <p><i class="fa fa-3x fa-circle-o-notch fa-spin"></i></p>
           <h4>Carregando serviços&hellip;</h4>
           <p id="loading-messages">&nbsp;</p>
         </div>
-                      
-    
+        
+        <div id="template-service" class="w3-container w3-half service-item-container" style="display: none;">
+			<div class="w3-panel w3-card hover-zoom service-item">
+				<h5></h5>
+			</div>
+        </div>
+                
       </section>
-
+      
+      <div class="clear"></div>
+      
+	  <div id="popup-servicos" class="w3-modal">
+		<div class="w3-modal-content w3-border w3-round w3-animate-bottom w3-card-4">
+			<span class="w3-button w3-large w3-display-topright" onclick="closePopup();">&times;</span>
+			<div class="w3-container w3-padding-32">
+				<h5 id="popup-title" class="title center"></h5>
+				<div id="popup-content"></div>
+				
+				<div class="center">
+					<a href="./contato" style="display: inline;"><button class="btn-contact btn-orange hover-zoom" style="cursor: pointer;">Quero um orçamento!</button></a>
+				</div>
+			</div>
+		</div>
+	  </div>
+	  
       <br>
       <h5>Outros serviços</h5>
       <p>Não encontrou o que procurava? Para soluções personalizadas, entre em contato conosco.</p>

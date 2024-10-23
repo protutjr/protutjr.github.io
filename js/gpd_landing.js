@@ -11,9 +11,10 @@ function showLandingPageServices() {
 		template.querySelector("h5.title").innerText = service.titulo
 		template.querySelector("p.description").innerText = service.texto;
 		template.querySelector("i.icon").classList.add(service.icone || "fa-gear");
+		template.querySelector("a").href = template.querySelector("a").href + "?search=" + encodeURIComponent(service.titulo);
 		template.style.display = "";
 		
-		fragment.appendChild(template);		
+		fragment.appendChild(template);
 	}	
 	
 	let container = document.getElementById("template-service-homepage").parentElement

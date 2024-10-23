@@ -30,6 +30,11 @@
 .services li article.loading{color: transparent; border: none; background-color: #B9B9B9; height: 220pt; animation: loadingAnimation 1s ease-in-out 0s infinite alternate;}
 .services li article.loading i{background-color: #B9B9B9; animation: loadingAnimation 1s ease-in-out 0s infinite alternate;}
 #template-service-homepage + li {margin: 0; clear: left;}
+.service-item {background-color: #F7F7F7; border: 1px solid #29577C; border-radius: 8px; padding: 20px; cursor: pointer;}
+.service-item h5 {margin: 0; color: #555555;}
+.service-item p {margin: 0; font-size: 15px; color: #555555;}
+.service-item a {font-size: 13px; margin-top: 6px; font-weight: bold; color: #0F3D63}
+.service-item-container:last-child:not(:nth-child(even)) {clear: both;}
 
 /* Botões redes sociais (dependem do Font Awesome)
 --------------------------------------------------------------------------------------------------------------- */
