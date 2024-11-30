@@ -15,10 +15,20 @@
 
 <!-- JAVASCRIPT -->
 <script src="{{ "/js/jquery.min.js" | relative_url }}"></script>
-<script src="{{ "/js/jquery.backtotop.js" | relative_url }}" defer></script>
 <script src="{{ "/js/gpd_contatos.js" | relative_url }}"></script>
 <script src="{{ "/js/gpd_integration.js" | relative_url }}"></script>
 
+<!-- CONTACT FORM -->
+<script src="https://forms.app/static/embed.js" type="text/javascript" async defer onload="conditionalFormOpen();"></script>
+<script>
+	function conditionalFormOpen() {
+		let href = window.location.href;
+		if (!href.includes("contato")) {
+			document.getElementById("contact-float").style.display = "";
+			new formsapp('6738041482617bff1d19e790', 'slider', {'button':{'text':'<i class="fa fa-envelope-o fa-2x"></i>','color':'#E43F21'},'width':'767px','height':'100vh','align':'right'}, 'https://zohcl48o.forms.app');
+		}
+	}
+</script>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-099HR3NL2L"></script>
