@@ -1,17 +1,18 @@
 "use strict";
 
 const DB_URL = 		"https://script.google.com/macros/s/AKfycbzBR00KMCwKKKM-EAK6Jp7iS8rTJhe8tuyRiVsV8mLvxX8w8CYZSq9B8n0R0IN_6NUONQ/exec";
-//const FALLBACK_1 = 	"https://script.google.com/macros/s/AKfycbzBR00KMCwKKKM-EAK6Jp7iS8rTJhe8tuyRiVsV8mLvxX8w8CYZSq9B8n0R0IN_6NUONQ/exec";
-//const FALLBACK_2 = 	"https://script.google.com/macros/s/AKfycbzBR00KMCwKKKM-EAK6Jp7iS8rTJhe8tuyRiVsV8mLvxX8w8CYZSq9B8n0R0IN_6NUONQ/exec";
-//const FORM_URL = 	"https://docs.google.com/forms/d/e/1FAIpQLSe5VzcseAQt9lh_OUl5XZgOTo8LeghmZo4O2zsxzSBLDUdikQ/formResponse";
+//const FALLBACK = 	"https://script.google.com/macros/s/AKfycbzBR00KMCwKKKM-EAK6Jp7iS8rTJhe8tuyRiVsV8mLvxX8w8CYZSq9B8n0R0IN_6NUONQ/exec";
 
 let siteData = {};
 let siteLoaded = false;
 
 function fetchSiteData(url, updateSiteDataVariable) {
 	ajaxGet(url, 15000).then(resp => {
+		let data = JSON.parse(resp);
+		data.timestamp = Date.now();
+		
 		if (updateSiteDataVariable) {
-			siteData = JSON.parse(resp);
+			siteData = data;
 		}
 		
 		if (!siteLoaded) {
@@ -19,8 +20,8 @@ function fetchSiteData(url, updateSiteDataVariable) {
 			document.dispatchEvent(customEvent);
 			siteLoaded = true
 		}
-		
-		storeSiteInfo(resp);		
+				
+		storeSiteInfo(JSON.stringify(data));		
 	});
 }
 
@@ -36,18 +37,15 @@ function updateSiteInfo() {
 		fetchSiteData(DB_URL, true);
 
 	} else {
-		const DUAS_HORAS = 7200000;
 		let storedData = localStorage.getItem("Protut_site_data");		
 		siteData = JSON.parse(storedData);
 		
-		if (siteData.timestamp < (Date.now() - DUAS_HORAS)) {
-			fetchSiteData(DB_URL, false);
-			console.info("Updating cached site data...");
-		}
+		fetchSiteData(DB_URL, false);
+		console.info("Updating cached site data...");		
 
 		let customEvent = new CustomEvent("site_loaded");
 		document.dispatchEvent(customEvent);
-		siteLoaded = true;
+		siteLoaded = true;	
 	}
 	
 }

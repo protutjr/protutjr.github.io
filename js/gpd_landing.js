@@ -2,7 +2,7 @@
 
 function showLandingPageServices() {	
 	let services = siteData.landing_page;	
-	let servicesList = [services.servico_2, services.servico_1, services.servico_3];
+	let servicesList = [services.servico_1, services.servico_2, services.servico_3];
 	let fragment = document.createDocumentFragment();
 	
 	for (let service of servicesList) {

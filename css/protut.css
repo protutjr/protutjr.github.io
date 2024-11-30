@@ -23,6 +23,10 @@
 .btn-rounded, .nav-emphasys, .nav-emphasys:hover {color: #FFFFFF !important; background-color: #E43F21 !important; padding: 8px !important; border-radius: 5px;}
 #contact-btn-container {display: flex;}
 #contact-btn-container a {display: block; margin: auto;}
+#contact-float-btn {border-radius: 50% !important; height: 70px; width: 70px; padding: 0px !important;}
+#contact-float-btn:hover {filter: brightness(120%);}
+#contact-float span {padding: 4px 6px; border-radius: 2px; background: rgba(20,20,20,0.7); color: white; font-size: 11px; position: absolute; bottom: 35px; right: 80px; min-width: 120px; display: none;}
+#contact-float:hover span {display: block;}
 
 /* Integração com o Google Drive (GPD)
 --------------------------------------------------------------------------------------------------------------- */
@@ -104,7 +108,8 @@ h6 {font-size: 1rem;}
 
 /* Formulários da página de Contato
 -------------------------------------------------------------------------------------------------------------- */
-#contact-form {background-color: rgb(250, 227, 225); border-radius: 6px; border: 1px solid #CACACA;}
+#contact-form {background-color: #F6F5FF; border-radius: 6px; border: 1px solid #CACACA;}
+#contact-form {background-color: #F6F5FF; border-radius: 6px; border: 1px solid #CACACA;}
 #contact-form-loading {width: 100%; padding: 8px 12px; text-align: center; background: #F0F0F0; color: #606060; font-size: 1.2rem;}
 #contact-form-loading {display: none;}
 #contact-info {padding: 12px; background: #F6F6F6; border: 1px solid #CBCBCB; margin-top: 20px;}
