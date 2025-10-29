@@ -11,30 +11,40 @@ Licence URI: https://www.os-templates.com/template-terms
 <link rel="stylesheet" href="../css/protut.css">
 -->
 
+<a class="skip-link" href="#conteudo-principal"
+  >Pular para o conteúdo principal</a
+>
+
 <div class="wrapper row-white">
-  <header id="header" class="hoc clear" style="padding: 10px 0px;"> 
+  <header id="header" class="hoc clear" style="padding: 10px 0px">
     <a href="./index.html">
-		<img id="site-logo" src="./images/protut.svg" alt="Logo da Protut">
+      <img id="site-logo" src="./images/protut.svg" alt="Logo da Protut" />
     </a>
   </header>
 </div>
 
 <div class="wrapper row-dark-gray">
-  <nav id="mainav" class="hoc clear"> 
+  <nav id="mainav" class="hoc clear" aria-label="Navegação principal">
     <ul class="clear">
       <li><a href="./index.html">Página inicial</a></li>
       <li><a href="./servicos.html">Serviços</a></li>
       <li><a href="./processo-seletivo.html">Processo Seletivo</a></li>
-      <li><a class="drop" href="#">Sobre nós</a>
+      <li>
+        <a class="drop" href="#">Sobre nós</a>
         <ul>
-          <li><a href="./quem-somos.html">Quem somos</a></li>                    
+          <li><a href="./quem-somos.html">Quem somos</a></li>
           <li><a href="./mej.html">Movimento Empresa Júnior</a></li>
-          <li><a href="./faq.html">Perguntas Frequentes</a></li>    
+          <li><a href="./faq.html">Perguntas Frequentes</a></li>
         </ul>
-      </li>      
-      <li><a class="nav-emphasys hover-zoom" href="./contato.html">Contato</a></li>
+      </li>
+      <li>
+        <a class="nav-emphasys hover-zoom" href="./contato.html">Contato</a>
+      </li>
     </ul>
     <form action="#">
+      <label class="visually-hidden" for="mobilemenu"
+        >Abrir menu principal</label
+      >
       <select id="mobilemenu" onchange="goToPage(this.value);">
         <option value="#">MENU</option>
       </select>
