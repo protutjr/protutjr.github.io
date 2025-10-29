@@ -10,7 +10,7 @@ Licence: Free to use under our free template licence terms
 Licence URI: https://www.os-templates.com/template-terms
 -->
 
-<html lang="pt">
+<html lang="pt-BR">
 
 <head>
     <!-- Título desta página -->
@@ -19,7 +19,7 @@ Licence URI: https://www.os-templates.com/template-terms
     <!-- Bibiloteca W3.CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/w3-css/4.1.0/w3.min.css" integrity="sha512-Z6UIAdEZ7JNzeX5M/c5QZj+oqbldGD+E8xJEoOwAx5e0phH7kdjsWULGeK5l2UjehKtChHDaUY2rQAF/NEiI9w==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <!-- Integração GPD - landing page -->
-    <script src="{{ "/js/gpd_landing.js" | relative_url }}" defer></script>    
+    <script src="{{ "/js/gpd_landing.js" | relative_url }}" defer></script>
     <!-- Tags compartilhadas do cabeçalho -->
     {% include tags_comuns.html %}
 </head>
@@ -32,16 +32,16 @@ Licence URI: https://www.os-templates.com/template-terms
 <!-- Seção de apresentação -->
 <div class="wrapper bgded">
   <div class="bg-img bg-fallback" style="background-image: linear-gradient(180deg, #86A7C6 0%, #6483A1 43%, #172F56 83%);"></div>
-  <div class="bg-img bg-fallback" style="background-image: url('./images/backgrounds/painel_solar.jpg');"></div>  
+  <div class="bg-img bg-fallback" style="background-image: url('./images/backgrounds/painel_solar.jpg');"></div>
   <div id="main-slideshow" class="slideshow">
     <div class="bg-img" onerror="this.remove();" style="background-image: url('./images/backgrounds/braco_robo.webp');"></div>
     <div class="bg-img" onerror="this.remove();" style="background-image: url('./images/backgrounds/pcb.webp');"></div>
     <div class="bg-img" onerror="this.remove();" style="background-image: url('./images/backgrounds/painel_clp.webp');"></div>
     <div class="bg-img" onerror="this.remove();" style="background-image: url('./images/backgrounds/painel_solar.webp');"></div>
-    <script src="./js/slideshow.js" defer></script>    
+    <script src="./js/slideshow.js" defer></script>
   </div>
-  
-  <div id="pageintro" class="center bg-text bg-gradient"> 
+
+  <div id="pageintro" class="center bg-text bg-gradient">
     <div class="hoc">
       <h1 class="page-heading shadow-text">Bem-vindo à Protut</h1>
       <p class="shadow-text">Empresa júnior de Engenharia Elétrica e Automação Industrial da UTFPR de Ponta Grossa</p>
@@ -52,14 +52,14 @@ Licence URI: https://www.os-templates.com/template-terms
 
 <!-- Seção de serviços -->
 <div class="wrapper row-white">
-  <main class="hoc container clear">   
-    
+  <main id="conteudo-principal" tabindex="-1" class="hoc container clear">
+
     <div class="center">
       <h2>Conheça nossos serviços</h2>
       <p>Temos um portfólio completo para atender às suas necessidades</p>
     </div>
 
-    <ul class="nospace group services btmspace-50">      
+    <ul class="nospace group services btmspace-50">
       <li class="one_third first fake-element">
         <article class="loading">
           <i></i>
@@ -75,7 +75,7 @@ Licence URI: https://www.os-templates.com/template-terms
           <i></i>
         </article>
       </li>
-	  
+
 	  <li id="template-service-homepage" class="one_third hover-zoom" style="display: none;" >
         <article>
 		  <br>
@@ -87,29 +87,29 @@ Licence URI: https://www.os-templates.com/template-terms
           </footer>
         </article>
       </li>
-      
+
     </ul>
-    
+
     <div class="hoc center">
       <a class="btn-orange hover-zoom" href="servicos">Todos os serviços &raquo;</a>
     </div>
-     
+
     <div class="clear"></div>
   </main>
 </div>
 
 <!-- Seção de informações -->
 <div class="wrapper row-light-gray">
-  <section class="hoc container clear"> 
+  <section class="hoc container clear">
     <div class="group">
-      
+
       <div class="one_half first jusp">
         <h3 class="center">Nossa história</h3>
         <p>Fundada em 2013 por alunos da UTFPR de Ponta Grossa, a Protut busca desenvolver, produzir e comercializar serviços, tecnologias e produtos diferenciados de alta qualidade, para atender às mais diversas necessidades nas áreas de eletricidade e automação.</p>
         <p>A partir de 2018, com o curso de Engenharia Eletrônica sendo transformado em Engenharia Elétrica, e com a abertura da nossa empresa também aos alunos do curso de Tecnologia em Automação Industrial, mudamos nosso slogan de Protut Eletrônica para <b>Protut - Elétrica e Automação</b>. Uma nova identidade, mas o mesmo compromisso e dedicação aos nossos clientes.</p>
         <footer class="center"><a href="./quem-somos">Saiba mais &raquo;</a></footer>
       </div>
-      
+
       <div class="one_half jusp">
         <h3 class="center">O MEJ</h3>
         <p>O Movimento Empresa Júnior (MEJ) surgiu na França em 1967. A principal missão das empresas juniores (EJs) é aproximar os estudantes de cursos superiores da vivência prática da sua profissão, desenvolvendo o empreendedorismo e preparando-os para os futuros desafios do mercado de trabalho.</p>
@@ -126,14 +126,14 @@ Licence URI: https://www.os-templates.com/template-terms
   <div class="bg-img" style="background-image: url('./images/backgrounds/timeprotut.jpg');"></div>
   <div class="bg-gradient">
     <div class="hoc split jusp">
-      <section> 
+      <section>
         <h3>Entre para o nosso time</h3>
         <p>Faça parte da equipe Protut e desfrute da experiência única de pertencer a uma empresa júnior.</p>
         <ul class="fa-ul">
-          <li><i class="fa-li fa fa-check-circle"></i> Ganhe experiência na sua área</li>
-          <li><i class="fa-li fa fa-check-circle"></i> Desenvolva seu lado empreendedor</li>
-          <li><i class="fa-li fa fa-check-circle"></i> Trabalhe em equipe</li>
-          <li><i class="fa-li fa fa-check-circle"></i> Faça novos amigos</li>
+          <li><i aria-hidden="true" class="fa-li fa fa-check-circle"></i> Ganhe experiência na sua área</li>
+          <li><i aria-hidden="true" class="fa-li fa fa-check-circle"></i> Desenvolva seu lado empreendedor</li>
+          <li><i aria-hidden="true" class="fa-li fa fa-check-circle"></i> Trabalhe em equipe</li>
+          <li><i aria-hidden="true" class="fa-li fa fa-check-circle"></i> Faça novos amigos</li>
         </ul>
         <p class="btmspace-30">Nosso Processo Seletivo é aberto para os alunos dos cursos de Engenharia Elétrica e Automação Industrial da UTFPR de Ponta Grossa (inclusive calouros).</p>
         <footer><a class="btn" href="./processo-seletivo">Saiba Mais &raquo;</a></footer>
@@ -144,7 +144,7 @@ Licence URI: https://www.os-templates.com/template-terms
 
 <!-- Seção final -->
 <div class="wrapper row-white">
-  <section class="hoc container clear"> 
+  <section class="hoc container clear">
     <div class="group">
       <div class="one_half first jusp">
         <h3>Fique por dentro das novidades</h3>
@@ -152,7 +152,7 @@ Licence URI: https://www.os-templates.com/template-terms
         <footer><a href="https://instagram.com/protutjr" target="__blank">Acessar Instagram &raquo;</a></footer>
       </div>
       <div class="one_half">
-        <img src="./images/protut_insta.png">
+  <img src="./images/protut_insta.png" alt="Publicações da Protut no Instagram" loading="lazy">
       </div>
     </div>
   </section>
@@ -162,6 +162,6 @@ Licence URI: https://www.os-templates.com/template-terms
 {% include footer.html %}
 
 <!-- Botão p/ voltar ao topo da página -->
-<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<a id="backtotop" href="#top" aria-label="Voltar ao topo"><i aria-hidden="true" class="fa fa-chevron-up"></i></a>
 </body>
 </html>

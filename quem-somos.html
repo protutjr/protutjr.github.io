@@ -5,6 +5,7 @@ redirect_from:
   - /sobre-nos
   - /sobre-nos
 ---
+
 <!DOCTYPE html>
 <!--
 Template Name: Edgpress
@@ -14,65 +15,108 @@ Licence: Free to use under our free template licence terms
 Licence URI: https://www.os-templates.com/template-terms
 -->
 
-<html lang="pt">
-
-<head>
+<html lang="pt-BR">
+  <head>
     <!-- Título desta página -->
     <title>Quem Somos | Protut - Elétrica e Automação</title>
-    
+
     <!-- Tags compartilhadas do cabeçalho -->
     {% include tags_comuns.html %}
-</head>
+  </head>
 
-<body id="top">
+  <body id="top">
+    <!-- Cabeçalho da página -->
+    {% include header.html %}
 
-<!-- Cabeçalho da página -->
-{% include header.html %}
-
-<div class="wrapper blue-gradient">
-  <section id="breadcrumb" class="hoc clear"> 
-	<ul>
-	  <li><a href="./index.html">Página Inicial</a></li>
-	  <li><a href="./quem-somos.html">Quem Somos</a></li>		  
-	</ul>
-	<h4>Quem Somos</h4>
-  </section>
-</div>
-
-<div class="wrapper row-white">
-  <main class="hoc container clear">     
-    <div class="content jusp"> 
-      <h3>Nossa história</h3>
-      <img class="imgr borderedbox inspace-5" src="./images/timeprotut.jpg" style="width: 400px;" alt="Equipe da Protut reunida">
-      <p>A Protut é uma empresa júnior fundada em 2013 por alunos do antigo curso de Engenharia Eletrônica (atual Engenharia Elétrica) da Universidade Tecnológica Federal do Paraná (UTFPR), campus Ponta Grossa. Movidos pelo espírito empreendedor, e ancorados nos valores do Movimento Empresa Júnior (MEJ), buscamos atuar como um elo entre a vida universitária e o mundo profissional, oferecendo aos nossos clientes <b>produtos e serviços personalizados</b>, desenvolvidos por uma equipe de universitários altamente capacitados e empenhados em encontrar as melhores soluções para as necessidades dos nossos clientes.</p>
-      <p>Inicialmente voltada apenas à área da Eletrônica, após o curso de Engenharia Eletrônica ser convertido em Engenharia Elétrica, e nossa empresa passar a incluir membros do curso de Tecnologia em Automação Industrial, atualizamos nossa marca, passando a utilizar o nome <b>Protut - Elétrica e Automação</b>. Uma nova identidade, mas o mesmo compromisso e dedicação aos nossos clientes.</p>
-      <p><b>Atualmente, oferecemos soluções nas áreas de Engenharia Elétrica e Automação.</b> Seja qual for o seu problema, nós temos a solução ideal para você! <b>Na Protut, nossa prioridade é a sua.</b></p>
-      <a href="./servicos.html">Conheça nossos serviços &raquo;</a>
-      <a href="./mej.html">Saiba mais sobre o Movimento Empresa Júnior &raquo;</a>
-    </div>
-    
-    <div class="content jusp">
-      <h3>Missão, Visão e Valores</h3>
-      <p><b>Missão:</b> Ser um canal de transformação na sociedade e na vida de nossos membros, através da combinação entre a prestação de serviços de excelência e a qualificação plena (técnica, social-interpessoal e empreendedora) dos nossos colaboradores.</p>
-      <p><b>Visão:</b> Ser reconhecida em Ponta Grossa e no Paraná como referência pela formação de profissionais competentes e seres humanos comprometidos em causar um impacto positivo no mundo e pela capacidade de encantar os clientes, oferecendo sempre as melhores soluções.</p>
-      <p><b>Valores:</b> Garra, conexão e evolução.</p>      	  
-    </div>
-    
-    <div class="content jusp">
-      <h3>Informações legais</h3>
-      <p><b>CNPJ:</b> 18.704.327/0001-00</p>
-      <p><b>Razão Social e Nome Fantasia:</b> PROTUT</p>
-      <p><b>Nautreza Jurídica:</b> 399-9 Associação Privada</p>
+    <div class="wrapper blue-gradient">
+      <section id="breadcrumb" class="hoc clear">
+        <ul>
+          <li><a href="./index.html">Página Inicial</a></li>
+          <li><a href="./quem-somos.html">Quem Somos</a></li>
+        </ul>
+        <h4>Quem Somos</h4>
+      </section>
     </div>
 
-    <div class="clear"></div>
-  </main>
-</div>
+    <div class="wrapper row-white">
+      <main id="conteudo-principal" tabindex="-1" class="hoc container clear">
+        <div class="content jusp">
+          <h3>Nossa história</h3>
+          <img
+            class="imgr borderedbox inspace-5"
+            src="./images/timeprotut.jpg"
+            style="width: 400px"
+            alt="Equipe da Protut reunida"
+          />
+          <p>
+            A Protut é uma empresa júnior fundada em 2013 por alunos do antigo
+            curso de Engenharia Eletrônica (atual Engenharia Elétrica) da
+            Universidade Tecnológica Federal do Paraná (UTFPR), campus Ponta
+            Grossa. Movidos pelo espírito empreendedor, e ancorados nos valores
+            do Movimento Empresa Júnior (MEJ), buscamos atuar como um elo entre
+            a vida universitária e o mundo profissional, oferecendo aos nossos
+            clientes <b>produtos e serviços personalizados</b>, desenvolvidos
+            por uma equipe de universitários altamente capacitados e empenhados
+            em encontrar as melhores soluções para as necessidades dos nossos
+            clientes.
+          </p>
+          <p>
+            Inicialmente voltada apenas à área da Eletrônica, após o curso de
+            Engenharia Eletrônica ser convertido em Engenharia Elétrica, e nossa
+            empresa passar a incluir membros do curso de Tecnologia em Automação
+            Industrial, atualizamos nossa marca, passando a utilizar o nome
+            <b>Protut - Elétrica e Automação</b>. Uma nova identidade, mas o
+            mesmo compromisso e dedicação aos nossos clientes.
+          </p>
+          <p>
+            <b
+              >Atualmente, oferecemos soluções nas áreas de Engenharia Elétrica
+              e Automação.</b
+            >
+            Seja qual for o seu problema, nós temos a solução ideal para você!
+            <b>Na Protut, nossa prioridade é a sua.</b>
+          </p>
+          <a href="./servicos.html">Conheça nossos serviços &raquo;</a>
+          <a href="./mej.html"
+            >Saiba mais sobre o Movimento Empresa Júnior &raquo;</a
+          >
+        </div>
 
-<!-- Rodapé da página -->
-{% include footer.html %}
+        <div class="content jusp">
+          <h3>Missão, Visão e Valores</h3>
+          <p>
+            <b>Missão:</b> Ser um canal de transformação na sociedade e na vida
+            de nossos membros, através da combinação entre a prestação de
+            serviços de excelência e a qualificação plena (técnica,
+            social-interpessoal e empreendedora) dos nossos colaboradores.
+          </p>
+          <p>
+            <b>Visão:</b> Ser reconhecida em Ponta Grossa e no Paraná como
+            referência pela formação de profissionais competentes e seres
+            humanos comprometidos em causar um impacto positivo no mundo e pela
+            capacidade de encantar os clientes, oferecendo sempre as melhores
+            soluções.
+          </p>
+          <p><b>Valores:</b> Garra, conexão e evolução.</p>
+        </div>
 
-<!-- Botão p/ voltar ao topo da página -->
-<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
-</body>
+        <div class="content jusp">
+          <h3>Informações legais</h3>
+          <p><b>CNPJ:</b> 18.704.327/0001-00</p>
+          <p><b>Razão Social e Nome Fantasia:</b> PROTUT</p>
+          <p><b>Nautreza Jurídica:</b> 399-9 Associação Privada</p>
+        </div>
+
+        <div class="clear"></div>
+      </main>
+    </div>
+
+    <!-- Rodapé da página -->
+    {% include footer.html %}
+
+    <!-- Botão p/ voltar ao topo da página -->
+    <a id="backtotop" href="#top" aria-label="Voltar ao topo"
+      ><i aria-hidden="true" class="fa fa-chevron-up"></i
+    ></a>
+  </body>
 </html>

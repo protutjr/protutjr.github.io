@@ -11,31 +11,34 @@ Licence URI: https://www.os-templates.com/template-terms
 <link rel="stylesheet" href="../css/protut.css">
 -->
 
+<a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+
 <div class="wrapper row-white">
-  <header id="header" class="hoc clear" style="padding: 10px 0px;"> 
+  <header id="header" class="hoc clear" style="padding: 10px 0px;">
     <a href="{{ "/index.html" | relative_url }}">
-		<img id="site-logo" src="{{ "/images/protut.svg" alt="Logo da Protut" | relative_url }}">
+		<img id="site-logo" src="{{ "/images/protut.svg" | relative_url }}" alt="Logo da Protut" loading="lazy">
     </a>
   </header>
 </div>
 
 <div class="wrapper row-dark-gray">
-  <nav id="mainav" class="hoc clear"> 
+  <nav id="mainav" class="hoc clear" aria-label="Navegação principal">
     <ul class="clear">
       <li><a href="{{ "/index.html" | relative_url }}">Página inicial</a></li>
       <li><a href="{{ "/servicos.html" | relative_url }}">Serviços</a></li>
       <li><a href="{{ "/processo-seletivo.html" | relative_url }}">Processo Seletivo</a></li>
-      <li><a class="drop" href="#">Sobre nós</a>
+  <li><a class="drop" href="{{ "/sobre-nos.html" | relative_url }}" aria-haspopup="true">Sobre nós</a>
         <ul>
-          <li><a href="{{ "/quem-somos.html" | relative_url }}">Quem somos</a></li>                    
+          <li><a href="{{ "/quem-somos.html" | relative_url }}">Quem somos</a></li>
           <li><a href="{{ "/mej.html" | relative_url }}">Movimento Empresa Júnior</a></li>
-          <li><a href="{{ "/faq.html" | relative_url }}">Perguntas Frequentes</a></li>    
+          <li><a href="{{ "/faq.html" | relative_url }}">Perguntas Frequentes</a></li>
         </ul>
-      </li>      
+      </li>
       <li><a class="nav-emphasys hover-zoom" href="{{ "/contato.html" | relative_url }}">Contato</a></li>
     </ul>
     <form action="#">
-      <select id="mobilemenu" onchange="goToPage(this.value);">
+      <label class="sr-only" for="mobilemenu">Ir para página:</label>
+      <select id="mobilemenu" onchange="goToPage(this.value);" aria-label="Menu de navegação móvel">
         <option value="#">MENU</option>
       </select>
     </form>

@@ -10,16 +10,16 @@ Licence: Free to use under our free template licence terms
 Licence URI: https://www.os-templates.com/template-terms
 -->
 
-<html lang="pt">
+<html lang="pt-BR">
 
 <head>
     <!-- Título desta página -->
     <title>Redirecionando... | Protut - Elétrica e Automação</title>
     <meta http-equiv="refresh" content="0; URL='https://protutjr.github.io/quem-somos'"/>
-    
+
     <!-- Tags compartilhadas do cabeçalho -->
     {% include tags_comuns.html %}
-    
+
     <!-- ERROR 404 FILES -->
     <link href="{{ "/css/e404.css" | absolute_url }}" rel="stylesheet">
     <script src="{{ "/js/e404.js" | absolute_url }}" ></script>
@@ -31,13 +31,10 @@ Licence URI: https://www.os-templates.com/template-terms
 {% include header.html %}
 
 <div class="wrapper row-light-gray">
-  <main class="hoc container center">     
-    
+  <main id="conteudo-principal" tabindex="-1" class="hoc container center">
       <h3>Redirecionando...</h3>
       <p>Se o redirecionamento não ocorrer, <a href="https://protutjr.github.io/quem-somos">clique aqui</a>.</p>
-      <img src="{{ "/images/corujut.svg" | absolute_url }}" style="min-height: 100px;min-width: 100px;">      
-    </div>       
-    
+      <img src="{{ "/images/corujut.svg" | absolute_url }}" style="min-height: 100px;min-width: 100px;" alt="Mascote Corujut" loading="lazy">
   </main>
 </div>
 
@@ -45,6 +42,6 @@ Licence URI: https://www.os-templates.com/template-terms
 {% include footer.html %}
 
 <!-- Botão p/ voltar ao topo da página -->
-<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<a id="backtotop" href="#top" aria-label="Voltar ao topo"><i aria-hidden="true" class="fa fa-chevron-up"></i></a>
 </body>
 </html>

@@ -10,15 +10,15 @@ Licence: Free to use under our free template licence terms
 Licence URI: https://www.os-templates.com/template-terms
 -->
 
-<html lang="pt">
+<html lang="pt-BR">
 
 <head>
     <!-- Título desta página -->
     <title>Página não encontrada | Protut - Elétrica e Automação</title>
-    
+
     <!-- Tags compartilhadas do cabeçalho -->
     {% include tags_comuns.html %}
-    
+
     <!-- ERROR 404 FILES -->
     <link href="{{ "/css/e404.css" | absolute_url }}" rel="stylesheet">
     <script src="{{ "/js/e404.js" | absolute_url }}" ></script>
@@ -30,22 +30,24 @@ Licence URI: https://www.os-templates.com/template-terms
 {% include header.html %}
 
 <div class="wrapper row-light-gray">
-  <main class="hoc container center">     
-    
-    <div id="error404" class=""> 
+  <main id="conteudo-principal" tabindex="-1" class="hoc container center">
+
+    <div id="error404" class="">
       <h3>Ops! A página não foi encontrada.</h3>
       <p>Erro 404</p>
-      <img src="{{ "/images/corujut.svg" | absolute_url }}" onclick="showEasterEgg();">
+      <button type="button" class="easter-egg-trigger" onclick="showEasterEgg();" aria-controls="easter-egg" aria-label="Mostrar mensagem surpresa">
+        <img src="{{ "/images/corujut.svg" | absolute_url }}" alt="" loading="lazy" aria-hidden="true">
+      </button>
       <p class="small-txt">Não clique na Corujut</p>
     </div>
-    
-    <div id="easter-egg" style="display: none;">	  
+
+    <div id="easter-egg" style="display: none;">
       <div id="quotes">
 		<h6 id="title"></h6>
 		<p id="text"></p>
       </div>
     </div>
-    
+
   </main>
 </div>
 
@@ -53,6 +55,6 @@ Licence URI: https://www.os-templates.com/template-terms
 {% include footer.html %}
 
 <!-- Botão p/ voltar ao topo da página -->
-<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<a id="backtotop" href="#top" aria-label="Voltar ao topo"><i aria-hidden="true" class="fa fa-chevron-up"></i></a>
 </body>
 </html>
