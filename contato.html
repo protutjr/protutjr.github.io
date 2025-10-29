@@ -1,6 +1,7 @@
 ---
 # Protut - Elétrica e Automação
 ---
+
 <!DOCTYPE html>
 <!--
 Template Name: Edgpress
@@ -10,77 +11,117 @@ Licence: Free to use under our free template licence terms
 Licence URI: https://www.os-templates.com/template-terms
 -->
 
-<html lang="pt">
-
-<head>
+<html lang="pt-BR">
+  <head>
     <!-- Título desta página -->
     <title>Contato | Protut - Elétrica e Automação</title>
-    
-	<!-- Tags compartilhadas do cabeçalho -->
+
+    <!-- Tags compartilhadas do cabeçalho -->
     {% include tags_comuns.html %}
-</head>
+  </head>
 
-<body id="top">
+  <body id="top">
+    {% include header.html %}
 
-{% include header.html %}
-
-<div class="wrapper red-gradient">
-  <section id="breadcrumb" class="hoc clear"> 
-	<ul>
-	  <li><a href="./index.html">Página Inicial</a></li>
-	  <li><a href="./contato.html">Contato</a></li>		  
-	</ul>
-	<h4>Contato</h4>
-  </section>
-</div>
-
-<div class="wrapper row-white">
-  <main class="hoc container clear">     
-    <div class="content three_quarter first"> 
-      <h3 class="center">Fale conosco</h3>      
-	  <p class="center">Envie-nos uma mensagem online. Responderemos o mais rápido possível.</p>	  
-	  <section id="contact-form" class="btmspace-30">		  
-		<!--div id="contact-form-loading">
-		  <p><i class="fa fa-refresh fa-spin"></i> Aguarde um instante. Carregando formulário&hellip;</p>
-		</div-->
-		<div formsappId="6738041482617bff1d19e790"></div>
-        <script src="https://forms.app/static/embed.js" type="text/javascript" async defer onload="new formsapp('6738041482617bff1d19e790', 'standard', {'width':'100vw','height':'890px'}, 'https://zohcl48o.forms.app');"></script>
-	  </section>
-	  <p>Confira também a nossa página de <a href="./faq.html" style="display:inline;">Perguntas Frequentes</a>.</p>
+    <div class="wrapper red-gradient">
+      <section id="breadcrumb" class="hoc clear">
+        <ul>
+          <li><a href="./index.html">Página Inicial</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+        </ul>
+        <h4>Contato</h4>
+      </section>
     </div>
-    
-    <div id="contact-info" class="sidebar one_quarter jusp">
-		  <h5>Dados de contato</h5>
-		  <h6><i class="fa fa-whatsapp"></i> Nosso número:</h6>
-		  <div id="contact-list"></div>
 
-		  <h6><i class="fa fa-envelope-o"></i> Nosso e-mail:</h6>
-		  <p><span>contato.</span><span>protut@gmail.com</span></p>
-		  
-		  <h6><i class="fa fa-globe"></i> Nossas redes sociais:</h6>
-		  <a href="https://www.instagram.com/protutjr" target="_blank">Instagram</a>
-		  <a href="https://www.facebook.com/protutjr" target="_blank">Facebook</a>
-		  <a href="https://www.linkedin.com/company/protut" target="_blank">LinkedIn</a>
-		  
-		  <h6><i class="fa fa-map-marker"></i> Nosso endereço:</h6>
-		  <address>
-			UTFPR campus Ponta Grossa - Bloco A - piso inferior.
-			<br>
+    <div class="wrapper row-white">
+      <main id="conteudo-principal" tabindex="-1" class="hoc container clear">
+        <div class="content three_quarter first">
+          <h3 class="center">Fale conosco</h3>
+          <p class="center">
+            Envie-nos uma mensagem online. Responderemos o mais rápido possível.
+          </p>
+          <section id="contact-form" class="btmspace-30">
+            <!--div id="contact-form-loading">
+		  <p><i aria-hidden="true" class="fa fa-refresh fa-spin"></i> Aguarde um instante. Carregando formulário&hellip;</p>
+		</div-->
+            <div formsappId="6738041482617bff1d19e790"></div>
+            <script
+              src="https://forms.app/static/embed.js"
+              type="text/javascript"
+              async
+              defer
+              onload="new formsapp('6738041482617bff1d19e790', 'standard', {'width':'100vw','height':'890px'}, 'https://zohcl48o.forms.app');"
+            ></script>
+          </section>
+          <p>
+            Confira também a nossa página de
+            <a href="./faq.html" style="display: inline">Perguntas Frequentes</a
+            >.
+          </p>
+        </div>
+
+        <div id="contact-info" class="sidebar one_quarter jusp">
+          <h5>Dados de contato</h5>
+          <h6>
+            <i aria-hidden="true" class="fa fa-whatsapp"></i> Nosso número:
+          </h6>
+          <div id="contact-list"></div>
+
+          <h6>
+            <i aria-hidden="true" class="fa fa-envelope-o"></i> Nosso e-mail:
+          </h6>
+          <p><span>contato.</span><span>protut@gmail.com</span></p>
+
+          <h6>
+            <i aria-hidden="true" class="fa fa-globe"></i> Nossas redes sociais:
+          </h6>
+          <a
+            href="https://www.instagram.com/protutjr"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Instagram</a
+          >
+          <a
+            href="https://www.facebook.com/protutjr"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Facebook</a
+          >
+          <a
+            href="https://www.linkedin.com/company/protut"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+
+          <h6>
+            <i aria-hidden="true" class="fa fa-map-marker"></i> Nosso endereço:
+          </h6>
+          <address>
+            UTFPR campus Ponta Grossa - Bloco A - piso inferior.
+            <br />
             Rua Washington Subtil Chueire, nº 330, 84017-220. Ponta Grossa/PR
-            <a href="https://goo.gl/maps/PtQTJCwRziMrTemx6" target="__blank">Ver no Google Maps &raquo;</a>
+            <a
+              href="https://goo.gl/maps/PtQTJCwRziMrTemx6"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Ver no Google Maps &raquo;</a
+            >
           </address>
-	</div>
-	
-    <div class="clear"></div>
-  </main>
-</div>
+        </div>
 
-<!--
+        <div class="clear"></div>
+      </main>
+    </div>
+
+    <!--
 <div id="footer-content"></div>
 -->
-{% include footer.html %}
+    {% include footer.html %}
 
-<!-- Botão p/ voltar ao topo da página -->
-<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
-</body>
+    <!-- Botão p/ voltar ao topo da página -->
+    <a id="backtotop" href="#top" aria-label="Voltar ao topo"
+      ><i aria-hidden="true" class="fa fa-chevron-up"></i
+    ></a>
+  </body>
 </html>
